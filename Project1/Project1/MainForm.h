@@ -169,7 +169,7 @@ namespace Project1 {
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->BackColor = System::Drawing::SystemColors::ActiveCaption;
+			this->BackColor = System::Drawing::Color::Red;
 			this->ClientSize = System::Drawing::Size(372, 369);
 			this->Controls->Add(this->tableLayoutPanel1);
 			this->Controls->Add(this->Welcome);
