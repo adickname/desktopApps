@@ -1,3 +1,6 @@
 C:\Users\paste\Desktop\desktopApps\Project1\Project1\x64\Debug\Project1.vcxproj.AssemblyReference.cache
 C:\Users\paste\Desktop\desktopApps\Project1\Project1\x64\Debug\Project1.MainForm.resources
 C:\Users\paste\Desktop\desktopApps\Project1\Project1\x64\Debug\Project1.vcxproj.GenerateResource.cache
+C:\Users\paste\Desktop\rzeczyTestowe\desktopApps\Project1\Project1\x64\Debug\Project1.vcxproj.AssemblyReference.cache
+C:\Users\paste\Desktop\rzeczyTestowe\desktopApps\Project1\Project1\x64\Debug\Project1.MainForm.resources
+C:\Users\paste\Desktop\rzeczyTestowe\desktopApps\Project1\Project1\x64\Debug\Project1.vcxproj.GenerateResource.cache
