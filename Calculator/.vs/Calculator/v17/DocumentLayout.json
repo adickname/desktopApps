@@ -22,11 +22,23 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MyForm.h [Design]",
+              "DocumentMoniker": "C:\\Users\\paste\\Desktop\\desktopApps\\Calculator\\Calculator\\MyForm.h",
+              "RelativeDocumentMoniker": "Calculator\\MyForm.h",
+              "ToolTip": "C:\\Users\\paste\\Desktop\\desktopApps\\Calculator\\Calculator\\MyForm.h [Design]",
+              "RelativeToolTip": "Calculator\\MyForm.h [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-02-05T14:11:40.504Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
@@ -36,7 +48,7 @@
               "RelativeDocumentMoniker": "Calculator\\MyForm.h",
               "ToolTip": "C:\\Users\\paste\\Desktop\\desktopApps\\Calculator\\Calculator\\MyForm.h",
               "RelativeToolTip": "Calculator\\MyForm.h",
-              "ViewState": "AgIAAK8AAAAAAAAAAAAEwLgAAABBAAAAAAAAAA==",
+              "ViewState": "AgIAAMsAAAAAAAAAAAAvwNMAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-02-03T16:07:03.936Z",
               "EditorCaption": ""
@@ -51,20 +63,7 @@
               "RelativeToolTip": "Calculator\\MyForm.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-02-03T15:56:44.969Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MyForm.h [Design]",
-              "DocumentMoniker": "C:\\Users\\paste\\Desktop\\desktopApps\\Calculator\\Calculator\\MyForm.h",
-              "RelativeDocumentMoniker": "Calculator\\MyForm.h",
-              "ToolTip": "C:\\Users\\paste\\Desktop\\desktopApps\\Calculator\\Calculator\\MyForm.h [Design]",
-              "RelativeToolTip": "Calculator\\MyForm.h [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-02-03T15:56:12.546Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-02-03T15:56:44.969Z"
             }
           ]
         }
