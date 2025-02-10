@@ -57,7 +57,7 @@ namespace Calculator {
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
-		System::ComponentModel::Container ^components;
+		System::ComponentModel::Container^ components;
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
@@ -203,10 +203,10 @@ namespace Calculator {
 		int output = System::Convert::ToInt16(Number1->Text) + System::Convert::ToInt16(Number2->Text);
 		Result->Text = System::Convert::ToString(output);
 	}
-			private: System::Void PlusButton_MouseDown(System::Object^ sender, System::Windows::Forms::MouseEventArgs^ e) {
-				label3->Text += e->Button.ToString();
-				label3->ForeColor = System::Drawing::Color::Blue;
-			}
+	private: System::Void PlusButton_MouseDown(System::Object^ sender, System::Windows::Forms::MouseEventArgs^ e) {
+		label3->Text += e->Button.ToString();
+		label3->ForeColor = System::Drawing::Color::Blue;
+	}
 
 	private: System::Void PlusButton_MouseUp(System::Object^ sender, System::Windows::Forms::MouseEventArgs^ e) {
 		Result->Text += "mouseup";
@@ -227,17 +227,17 @@ namespace Calculator {
 	private: System::Void PlusButton_MouseHover(System::Object^ sender, System::EventArgs^ e) {
 		label3->ForeColor = System::Drawing::Color::Red;
 	}
-private: System::Void SubstractionButton_Click(System::Object^ sender, System::EventArgs^ e) {
-	int output = System::Convert::ToInt16(Number1->Text) - System::Convert::ToInt16(Number2->Text);
-	Result->Text = System::Convert::ToString(output);
-}
-private: System::Void DivisionButton_Click(System::Object^ sender, System::EventArgs^ e) {
-	int output = System::Convert::ToInt16(Number1->Text) / System::Convert::ToInt16(Number2->Text);
-	Result->Text = System::Convert::ToString(output);
-}
-private: System::Void MultiplicationButton_Click(System::Object^ sender, System::EventArgs^ e) {
-	int output = System::Convert::ToInt16(Number1->Text) * System::Convert::ToInt16(Number2->Text);
-	Result->Text = System::Convert::ToString(output);
-}
-};
+	private: System::Void SubstractionButton_Click(System::Object^ sender, System::EventArgs^ e) {
+		int output = System::Convert::ToInt16(Number1->Text) - System::Convert::ToInt16(Number2->Text);
+		Result->Text = System::Convert::ToString(output);
+	}
+	private: System::Void DivisionButton_Click(System::Object^ sender, System::EventArgs^ e) {
+		int output = System::Convert::ToInt16(Number1->Text) / System::Convert::ToInt16(Number2->Text);
+		Result->Text = System::Convert::ToString(output);
+	}
+	private: System::Void MultiplicationButton_Click(System::Object^ sender, System::EventArgs^ e) {
+		int output = System::Convert::ToInt16(Number1->Text) * System::Convert::ToInt16(Number2->Text);
+		Result->Text = System::Convert::ToString(output);
+	}
+	};
 }
