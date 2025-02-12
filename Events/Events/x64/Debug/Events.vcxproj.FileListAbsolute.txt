@@ -1,1 +1,4 @@
 C:\Users\AdrianPasterka\Desktop\desktopApps\Events\Events\x64\Debug\Events.vcxproj.AssemblyReference.cache
+C:\Users\paste\Desktop\desktopApps\Events\Events\x64\Debug\Events.vcxproj.AssemblyReference.cache
+C:\Users\paste\Desktop\desktopApps\Events\Events\x64\Debug\Events.MyForm.resources
+C:\Users\paste\Desktop\desktopApps\Events\Events\x64\Debug\Events.vcxproj.GenerateResource.cache

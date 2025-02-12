@@ -50,13 +50,14 @@ namespace Calculator {
 
 	private: System::Windows::Forms::Label^ label2;
 	private: System::Windows::Forms::Label^ Result;
+	private: System::Windows::Forms::Label^ label3;
 	protected:
 
 	private:
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
-		System::ComponentModel::Container ^components;
+		System::ComponentModel::Container^ components;
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
@@ -74,6 +75,7 @@ namespace Calculator {
 			this->MultiplicationButton = (gcnew System::Windows::Forms::Button());
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->Result = (gcnew System::Windows::Forms::Label());
+			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->SuspendLayout();
 			// 
 			// Number1
@@ -110,6 +112,12 @@ namespace Calculator {
 			this->PlusButton->Text = L"+";
 			this->PlusButton->UseVisualStyleBackColor = true;
 			this->PlusButton->Click += gcnew System::EventHandler(this, &MyForm::PlusButton_Click);
+			this->PlusButton->MouseDown += gcnew System::Windows::Forms::MouseEventHandler(this, &MyForm::PlusButton_MouseDown);
+			this->PlusButton->MouseUp += gcnew System::Windows::Forms::MouseEventHandler(this, &MyForm::PlusButton_MouseUp);
+			this->PlusButton->MouseMove += gcnew System::Windows::Forms::MouseEventHandler(this, &MyForm::PlusButton_MouseMove);
+			this->PlusButton->MouseEnter += gcnew System::EventHandler(this, &MyForm::PlusButton_MouseEnter);
+			this->PlusButton->MouseLeave += gcnew System::EventHandler(this, &MyForm::PlusButton_MouseLeave);
+			this->PlusButton->MouseHover += gcnew System::EventHandler(this, &MyForm::PlusButton_MouseHover);
 			// 
 			// SubstractionButton
 			// 
@@ -160,11 +168,21 @@ namespace Calculator {
 			this->Result->Size = System::Drawing::Size(0, 13);
 			this->Result->TabIndex = 8;
 			// 
+			// label3
+			// 
+			this->label3->AutoSize = true;
+			this->label3->Location = System::Drawing::Point(32, 105);
+			this->label3->Name = L"label3";
+			this->label3->Size = System::Drawing::Size(35, 13);
+			this->label3->TabIndex = 9;
+			this->label3->Text = L"label3";
+			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(502, 354);
+			this->Controls->Add(this->label3);
 			this->Controls->Add(this->Result);
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->MultiplicationButton);
@@ -185,17 +203,41 @@ namespace Calculator {
 		int output = System::Convert::ToInt16(Number1->Text) + System::Convert::ToInt16(Number2->Text);
 		Result->Text = System::Convert::ToString(output);
 	}
-private: System::Void SubstractionButton_Click(System::Object^ sender, System::EventArgs^ e) {
-	int output = System::Convert::ToInt16(Number1->Text) - System::Convert::ToInt16(Number2->Text);
-	Result->Text = System::Convert::ToString(output);
-}
-private: System::Void DivisionButton_Click(System::Object^ sender, System::EventArgs^ e) {
-	int output = System::Convert::ToInt16(Number1->Text) / System::Convert::ToInt16(Number2->Text);
-	Result->Text = System::Convert::ToString(output);
-}
-private: System::Void MultiplicationButton_Click(System::Object^ sender, System::EventArgs^ e) {
-	int output = System::Convert::ToInt16(Number1->Text) * System::Convert::ToInt16(Number2->Text);
-	Result->Text = System::Convert::ToString(output);
-}
-};
+	private: System::Void PlusButton_MouseDown(System::Object^ sender, System::Windows::Forms::MouseEventArgs^ e) {
+		label3->Text += e->Button.ToString();
+		label3->ForeColor = System::Drawing::Color::Blue;
+	}
+
+	private: System::Void PlusButton_MouseUp(System::Object^ sender, System::Windows::Forms::MouseEventArgs^ e) {
+		Result->Text += "mouseup";
+	}
+
+	private: System::Void PlusButton_MouseMove(System::Object^ sender, System::Windows::Forms::MouseEventArgs^ e) {
+		label3->Text = String::Format("X: {0}, Y: {1}", e->X, e->Y);
+	}
+
+	private: System::Void PlusButton_MouseEnter(System::Object^ sender, System::EventArgs^ e) {
+		label3->ForeColor = System::Drawing::Color::Blue;
+	}
+
+	private: System::Void PlusButton_MouseLeave(System::Object^ sender, System::EventArgs^ e) {
+		label3->ForeColor = System::Drawing::Color::Yellow;
+	}
+
+	private: System::Void PlusButton_MouseHover(System::Object^ sender, System::EventArgs^ e) {
+		label3->ForeColor = System::Drawing::Color::Red;
+	}
+	private: System::Void SubstractionButton_Click(System::Object^ sender, System::EventArgs^ e) {
+		int output = System::Convert::ToInt16(Number1->Text) - System::Convert::ToInt16(Number2->Text);
+		Result->Text = System::Convert::ToString(output);
+	}
+	private: System::Void DivisionButton_Click(System::Object^ sender, System::EventArgs^ e) {
+		int output = System::Convert::ToInt16(Number1->Text) / System::Convert::ToInt16(Number2->Text);
+		Result->Text = System::Convert::ToString(output);
+	}
+	private: System::Void MultiplicationButton_Click(System::Object^ sender, System::EventArgs^ e) {
+		int output = System::Convert::ToInt16(Number1->Text) * System::Convert::ToInt16(Number2->Text);
+		Result->Text = System::Convert::ToString(output);
+	}
+	};
 }
