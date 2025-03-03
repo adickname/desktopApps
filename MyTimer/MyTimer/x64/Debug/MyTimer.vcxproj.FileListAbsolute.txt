@@ -1,3 +1,6 @@
 C:\Users\paste\Desktop\desktopApps\MyTimer\MyTimer\x64\Debug\MyTimer.vcxproj.AssemblyReference.cache
 C:\Users\paste\Desktop\desktopApps\MyTimer\MyTimer\x64\Debug\MyTimer.MyForm.resources
 C:\Users\paste\Desktop\desktopApps\MyTimer\MyTimer\x64\Debug\MyTimer.vcxproj.GenerateResource.cache
+C:\Users\AdrianPasterka\Desktop\desktopApps\MyTimer\MyTimer\x64\Debug\MyTimer.vcxproj.AssemblyReference.cache
+C:\Users\AdrianPasterka\Desktop\desktopApps\MyTimer\MyTimer\x64\Debug\MyTimer.MyForm.resources
+C:\Users\AdrianPasterka\Desktop\desktopApps\MyTimer\MyTimer\x64\Debug\MyTimer.vcxproj.GenerateResource.cache

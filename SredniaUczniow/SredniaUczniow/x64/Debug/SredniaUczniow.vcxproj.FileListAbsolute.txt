@@ -1,0 +1,3 @@
+C:\Users\AdrianPasterka\Desktop\desktopApps\SredniaUczniow\SredniaUczniow\x64\Debug\SredniaUczniow.vcxproj.AssemblyReference.cache
+C:\Users\AdrianPasterka\Desktop\desktopApps\SredniaUczniow\SredniaUczniow\x64\Debug\SredniaUczniow.MyForm.resources
+C:\Users\AdrianPasterka\Desktop\desktopApps\SredniaUczniow\SredniaUczniow\x64\Debug\SredniaUczniow.vcxproj.GenerateResource.cache

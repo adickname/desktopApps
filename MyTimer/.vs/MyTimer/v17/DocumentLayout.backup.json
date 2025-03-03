@@ -1,17 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\paste\\Desktop\\desktopApps\\MyTimer\\",
+  "WorkspaceRootPath": "C:\\Users\\AdrianPasterka\\Desktop\\desktopApps\\MyTimer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0844B291-91B2-4FAB-89F4-9F130DA912DC}|MyTimer\\MyTimer.vcxproj|C:\\Users\\paste\\Desktop\\desktopApps\\MyTimer\\MyTimer\\MyForm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{0844B291-91B2-4FAB-89F4-9F130DA912DC}|MyTimer\\MyTimer.vcxproj|C:\\Users\\AdrianPasterka\\Desktop\\desktopApps\\MyTimer\\MyTimer\\MyForm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{0844B291-91B2-4FAB-89F4-9F130DA912DC}|MyTimer\\MyTimer.vcxproj|solutionrelative:MyTimer\\MyForm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0844B291-91B2-4FAB-89F4-9F130DA912DC}|MyTimer\\MyTimer.vcxproj|C:\\Users\\paste\\Desktop\\desktopApps\\MyTimer\\MyTimer\\MyForm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form",
+      "AbsoluteMoniker": "D:0:0:{0844B291-91B2-4FAB-89F4-9F130DA912DC}|MyTimer\\MyTimer.vcxproj|C:\\Users\\AdrianPasterka\\Desktop\\desktopApps\\MyTimer\\MyTimer\\MyForm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form",
       "RelativeMoniker": "D:0:0:{0844B291-91B2-4FAB-89F4-9F130DA912DC}|MyTimer\\MyTimer.vcxproj|solutionrelative:MyTimer\\MyForm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0844B291-91B2-4FAB-89F4-9F130DA912DC}|MyTimer\\MyTimer.vcxproj|C:\\Users\\paste\\Desktop\\desktopApps\\MyTimer\\MyTimer\\MyForm.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{0844B291-91B2-4FAB-89F4-9F130DA912DC}|MyTimer\\MyTimer.vcxproj|C:\\Users\\AdrianPasterka\\Desktop\\desktopApps\\MyTimer\\MyTimer\\MyForm.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{0844B291-91B2-4FAB-89F4-9F130DA912DC}|MyTimer\\MyTimer.vcxproj|solutionrelative:MyTimer\\MyForm.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -32,11 +32,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MyForm.h",
-              "DocumentMoniker": "C:\\Users\\paste\\Desktop\\desktopApps\\MyTimer\\MyTimer\\MyForm.h",
+              "DocumentMoniker": "C:\\Users\\AdrianPasterka\\Desktop\\desktopApps\\MyTimer\\MyTimer\\MyForm.h",
               "RelativeDocumentMoniker": "MyTimer\\MyForm.h",
-              "ToolTip": "C:\\Users\\paste\\Desktop\\desktopApps\\MyTimer\\MyTimer\\MyForm.h*",
-              "RelativeToolTip": "MyTimer\\MyForm.h*",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAAAGQAAAAsAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\AdrianPasterka\\Desktop\\desktopApps\\MyTimer\\MyTimer\\MyForm.h",
+              "RelativeToolTip": "MyTimer\\MyForm.h",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAUwFgAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-02-13T11:57:34.431Z",
               "EditorCaption": ""
@@ -45,9 +45,9 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "MyForm.cpp",
-              "DocumentMoniker": "C:\\Users\\paste\\Desktop\\desktopApps\\MyTimer\\MyTimer\\MyForm.cpp",
+              "DocumentMoniker": "C:\\Users\\AdrianPasterka\\Desktop\\desktopApps\\MyTimer\\MyTimer\\MyForm.cpp",
               "RelativeDocumentMoniker": "MyTimer\\MyForm.cpp",
-              "ToolTip": "C:\\Users\\paste\\Desktop\\desktopApps\\MyTimer\\MyTimer\\MyForm.cpp",
+              "ToolTip": "C:\\Users\\AdrianPasterka\\Desktop\\desktopApps\\MyTimer\\MyTimer\\MyForm.cpp",
               "RelativeToolTip": "MyTimer\\MyForm.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -57,10 +57,10 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "MyForm.h [Design]",
-              "DocumentMoniker": "C:\\Users\\paste\\Desktop\\desktopApps\\MyTimer\\MyTimer\\MyForm.h",
+              "DocumentMoniker": "C:\\Users\\AdrianPasterka\\Desktop\\desktopApps\\MyTimer\\MyTimer\\MyForm.h",
               "RelativeDocumentMoniker": "MyTimer\\MyForm.h",
               "ToolTip": "C:\\Users\\paste\\Desktop\\desktopApps\\MyTimer\\MyTimer\\MyForm.h [Design]",
-              "RelativeToolTip": "MyTimer\\MyForm.h [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\paste\\Desktop\\desktopApps\\MyTimer\\MyTimer\\MyForm.h [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-02-13T11:55:53.274Z"
             }
