@@ -8,7 +8,7 @@ namespace SredniaUczniow {
 	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
-	
+
 	int labelCount = 0;
 	/// <summary>
 	/// Summary for MyForm
@@ -47,12 +47,14 @@ namespace SredniaUczniow {
 	private: System::Windows::Forms::NumericUpDown^ numericUpDown6;
 	private: System::Windows::Forms::NumericUpDown^ numericUpDown7;
 	private: System::Windows::Forms::NumericUpDown^ numericUpDown8;
+	private: System::Windows::Forms::Label^ label1;
+	private: System::Windows::Forms::Label^ label2;
 
 	private:
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
-		System::ComponentModel::Container ^components;
+		System::ComponentModel::Container^ components;
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
@@ -71,6 +73,8 @@ namespace SredniaUczniow {
 			this->numericUpDown6 = (gcnew System::Windows::Forms::NumericUpDown());
 			this->numericUpDown7 = (gcnew System::Windows::Forms::NumericUpDown());
 			this->numericUpDown8 = (gcnew System::Windows::Forms::NumericUpDown());
+			this->label1 = (gcnew System::Windows::Forms::Label());
+			this->label2 = (gcnew System::Windows::Forms::Label());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->numericUpDown1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->numericUpDown2))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->numericUpDown3))->BeginInit();
@@ -92,6 +96,7 @@ namespace SredniaUczniow {
 			// numericUpDown2
 			// 
 			this->numericUpDown2->Location = System::Drawing::Point(34, 121);
+			this->numericUpDown2->Maximum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 6, 0, 0, 0 });
 			this->numericUpDown2->Name = L"numericUpDown2";
 			this->numericUpDown2->Size = System::Drawing::Size(120, 26);
 			this->numericUpDown2->TabIndex = 1;
@@ -116,6 +121,7 @@ namespace SredniaUczniow {
 			// numericUpDown3
 			// 
 			this->numericUpDown3->Location = System::Drawing::Point(34, 165);
+			this->numericUpDown3->Maximum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 6, 0, 0, 0 });
 			this->numericUpDown3->Name = L"numericUpDown3";
 			this->numericUpDown3->Size = System::Drawing::Size(120, 26);
 			this->numericUpDown3->TabIndex = 5;
@@ -123,6 +129,7 @@ namespace SredniaUczniow {
 			// numericUpDown4
 			// 
 			this->numericUpDown4->Location = System::Drawing::Point(34, 211);
+			this->numericUpDown4->Maximum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 6, 0, 0, 0 });
 			this->numericUpDown4->Name = L"numericUpDown4";
 			this->numericUpDown4->Size = System::Drawing::Size(120, 26);
 			this->numericUpDown4->TabIndex = 7;
@@ -130,6 +137,7 @@ namespace SredniaUczniow {
 			// numericUpDown5
 			// 
 			this->numericUpDown5->Location = System::Drawing::Point(34, 257);
+			this->numericUpDown5->Maximum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 6, 0, 0, 0 });
 			this->numericUpDown5->Name = L"numericUpDown5";
 			this->numericUpDown5->Size = System::Drawing::Size(120, 26);
 			this->numericUpDown5->TabIndex = 9;
@@ -137,6 +145,7 @@ namespace SredniaUczniow {
 			// numericUpDown6
 			// 
 			this->numericUpDown6->Location = System::Drawing::Point(34, 304);
+			this->numericUpDown6->Maximum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 6, 0, 0, 0 });
 			this->numericUpDown6->Name = L"numericUpDown6";
 			this->numericUpDown6->Size = System::Drawing::Size(120, 26);
 			this->numericUpDown6->TabIndex = 11;
@@ -144,6 +153,7 @@ namespace SredniaUczniow {
 			// numericUpDown7
 			// 
 			this->numericUpDown7->Location = System::Drawing::Point(34, 353);
+			this->numericUpDown7->Maximum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 6, 0, 0, 0 });
 			this->numericUpDown7->Name = L"numericUpDown7";
 			this->numericUpDown7->Size = System::Drawing::Size(120, 26);
 			this->numericUpDown7->TabIndex = 13;
@@ -151,15 +161,36 @@ namespace SredniaUczniow {
 			// numericUpDown8
 			// 
 			this->numericUpDown8->Location = System::Drawing::Point(34, 398);
+			this->numericUpDown8->Maximum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 6, 0, 0, 0 });
 			this->numericUpDown8->Name = L"numericUpDown8";
 			this->numericUpDown8->Size = System::Drawing::Size(120, 26);
 			this->numericUpDown8->TabIndex = 15;
+			// 
+			// label1
+			// 
+			this->label1->AutoSize = true;
+			this->label1->Location = System::Drawing::Point(622, 556);
+			this->label1->Name = L"label1";
+			this->label1->Size = System::Drawing::Size(51, 20);
+			this->label1->TabIndex = 16;
+			this->label1->Text = L"label1";
+			// 
+			// label2
+			// 
+			this->label2->AutoSize = true;
+			this->label2->Location = System::Drawing::Point(622, 602);
+			this->label2->Name = L"label2";
+			this->label2->Size = System::Drawing::Size(51, 20);
+			this->label2->TabIndex = 17;
+			this->label2->Text = L"label2";
 			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(9, 20);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(964, 631);
+			this->Controls->Add(this->label2);
+			this->Controls->Add(this->label1);
 			this->Controls->Add(this->numericUpDown8);
 			this->Controls->Add(this->numericUpDown7);
 			this->Controls->Add(this->numericUpDown6);
@@ -185,6 +216,21 @@ namespace SredniaUczniow {
 
 		}
 #pragma endregion
+		int minAverage = 0, maxAverage = 0;
+	private: System::Void averages(float average) {
+		if (labelCount == 1) {
+			this->label1->Text = "Najwyzsza srednia " + average;
+			this->label2->Text = "Nanizsza srednia " + average;
+		}
+		else {
+			if (average > maxAverage) {
+				this->label1->Text = "Najwyzsza srednia " + average;
+			}
+			if (average < minAverage) {
+				this->label2->Text = "Nanizsza srednia " + average;
+			}
+		}
+	}
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
 		if (labelCount <= 10) {
 			int sum = 0;
@@ -200,19 +246,23 @@ namespace SredniaUczniow {
 					newLabel->Text += temp->Text + ", ";
 					temp->Text = "0";
 				}
-				
-				
+
+
 			}
 			newLabel->Text += " , srednia ocen: " + (float)sum / grades;
+			averages((float)sum / grades);
 			textBox1->Text = "";
 			newLabel->Name = "label" + labelCount;
-			newLabel->Location = System::Drawing::Point(330, 30 + (labelCount * 30)); // Ustalamy pozycjê, aby etykiety siê nie nak³ada³y
+			newLabel->Location = System::Drawing::Point(330, 00 + (labelCount * 30)); // Ustalamy pozycjê, aby etykiety siê nie nak³ada³y
 			newLabel->AutoSize = true;
 
 			// Dodajemy etykietê do formularza
 			Controls->Add(newLabel);
 		}
+		else {
+			MessageBox::Show("Za duzo ludzi");
+		}
 
 	}
-};
+	};
 }
