@@ -1,0 +1,3 @@
+C:\Users\AdrianPasterka\Desktop\desktopApps\sprawdzian\sprawdzian\x64\Debug\sprawdzian.vcxproj.AssemblyReference.cache
+C:\Users\AdrianPasterka\Desktop\desktopApps\sprawdzian\sprawdzian\x64\Debug\sprawdzian.MyForm.resources
+C:\Users\AdrianPasterka\Desktop\desktopApps\sprawdzian\sprawdzian\x64\Debug\sprawdzian.vcxproj.GenerateResource.cache

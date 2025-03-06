@@ -171,18 +171,16 @@ namespace SredniaUczniow {
 			this->label1->AutoSize = true;
 			this->label1->Location = System::Drawing::Point(622, 556);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(51, 20);
+			this->label1->Size = System::Drawing::Size(0, 20);
 			this->label1->TabIndex = 16;
-			this->label1->Text = L"label1";
 			// 
 			// label2
 			// 
 			this->label2->AutoSize = true;
 			this->label2->Location = System::Drawing::Point(622, 602);
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(51, 20);
+			this->label2->Size = System::Drawing::Size(0, 20);
 			this->label2->TabIndex = 17;
-			this->label2->Text = L"label2";
 			// 
 			// MyForm
 			// 
