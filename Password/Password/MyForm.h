@@ -34,28 +34,31 @@ namespace Password {
 				delete components;
 			}
 		}
-	private: System::Windows::Forms::GroupBox^ groupBox1;
-	private: System::Windows::Forms::TextBox^ textBox2;
-	private: System::Windows::Forms::TextBox^ textBox1;
-	private: System::Windows::Forms::Label^ label3;
-	private: System::Windows::Forms::Label^ label2;
-	private: System::Windows::Forms::Label^ label1;
-	private: System::Windows::Forms::GroupBox^ groupBox2;
-	private: System::Windows::Forms::ComboBox^ comboBox1;
-	private: System::Windows::Forms::Button^ button1;
-	private: System::Windows::Forms::CheckBox^ checkBox3;
-	private: System::Windows::Forms::CheckBox^ checkBox2;
-	private: System::Windows::Forms::CheckBox^ checkBox1;
-	private: System::Windows::Forms::TextBox^ textBox3;
-	private: System::Windows::Forms::Label^ label4;
-	private: System::Windows::Forms::Button^ button2;
+	private: System::Windows::Forms::GroupBox^ groupBoxPassword;
+	protected:
+	private: System::Windows::Forms::GroupBox^ groupBoxPersonalData;
+	private: System::Windows::Forms::Label^ labelJob;
+	private: System::Windows::Forms::Label^ labelSurname;
+	private: System::Windows::Forms::Label^ labelName;
+	private: System::Windows::Forms::ComboBox^ comboBoxJob;
+	private: System::Windows::Forms::TextBox^ textBoxName;
+	private: System::Windows::Forms::Button^ buttonPassword;
+	private: System::Windows::Forms::CheckBox^ checkBoxSpecial;
+	private: System::Windows::Forms::CheckBox^ checkBoxDigit;
+	private: System::Windows::Forms::CheckBox^ checkBoxCharacters;
+	private: System::Windows::Forms::TextBox^ textBoxCharacters;
+	private: System::Windows::Forms::Label^ labelCharacters;
+	private: System::Windows::Forms::TextBox^ textBoxSurname;
+	private: System::Windows::Forms::Button^ buttonConfirm;
+
+
 	protected:
 
 	private:
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
-		System::ComponentModel::Container ^components;
+		System::ComponentModel::Container^ components;
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
@@ -64,202 +67,267 @@ namespace Password {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
-			this->groupBox2 = (gcnew System::Windows::Forms::GroupBox());
-			this->label1 = (gcnew System::Windows::Forms::Label());
-			this->label2 = (gcnew System::Windows::Forms::Label());
-			this->label3 = (gcnew System::Windows::Forms::Label());
-			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
-			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
-			this->comboBox1 = (gcnew System::Windows::Forms::ComboBox());
-			this->label4 = (gcnew System::Windows::Forms::Label());
-			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
-			this->checkBox1 = (gcnew System::Windows::Forms::CheckBox());
-			this->checkBox2 = (gcnew System::Windows::Forms::CheckBox());
-			this->checkBox3 = (gcnew System::Windows::Forms::CheckBox());
-			this->button1 = (gcnew System::Windows::Forms::Button());
-			this->button2 = (gcnew System::Windows::Forms::Button());
-			this->groupBox1->SuspendLayout();
-			this->groupBox2->SuspendLayout();
+			this->groupBoxPassword = (gcnew System::Windows::Forms::GroupBox());
+			this->buttonPassword = (gcnew System::Windows::Forms::Button());
+			this->checkBoxSpecial = (gcnew System::Windows::Forms::CheckBox());
+			this->checkBoxDigit = (gcnew System::Windows::Forms::CheckBox());
+			this->checkBoxCharacters = (gcnew System::Windows::Forms::CheckBox());
+			this->textBoxCharacters = (gcnew System::Windows::Forms::TextBox());
+			this->labelCharacters = (gcnew System::Windows::Forms::Label());
+			this->groupBoxPersonalData = (gcnew System::Windows::Forms::GroupBox());
+			this->textBoxSurname = (gcnew System::Windows::Forms::TextBox());
+			this->textBoxName = (gcnew System::Windows::Forms::TextBox());
+			this->comboBoxJob = (gcnew System::Windows::Forms::ComboBox());
+			this->labelJob = (gcnew System::Windows::Forms::Label());
+			this->labelSurname = (gcnew System::Windows::Forms::Label());
+			this->labelName = (gcnew System::Windows::Forms::Label());
+			this->buttonConfirm = (gcnew System::Windows::Forms::Button());
+			this->groupBoxPassword->SuspendLayout();
+			this->groupBoxPersonalData->SuspendLayout();
 			this->SuspendLayout();
 			// 
-			// groupBox1
+			// groupBoxPassword
 			// 
-			this->groupBox1->Controls->Add(this->comboBox1);
-			this->groupBox1->Controls->Add(this->textBox2);
-			this->groupBox1->Controls->Add(this->textBox1);
-			this->groupBox1->Controls->Add(this->label3);
-			this->groupBox1->Controls->Add(this->label2);
-			this->groupBox1->Controls->Add(this->label1);
-			this->groupBox1->Location = System::Drawing::Point(31, 46);
-			this->groupBox1->Name = L"groupBox1";
-			this->groupBox1->Size = System::Drawing::Size(423, 349);
-			this->groupBox1->TabIndex = 0;
-			this->groupBox1->TabStop = false;
-			this->groupBox1->Text = L"Dane pracownika";
+			this->groupBoxPassword->Controls->Add(this->buttonPassword);
+			this->groupBoxPassword->Controls->Add(this->checkBoxSpecial);
+			this->groupBoxPassword->Controls->Add(this->checkBoxDigit);
+			this->groupBoxPassword->Controls->Add(this->checkBoxCharacters);
+			this->groupBoxPassword->Controls->Add(this->textBoxCharacters);
+			this->groupBoxPassword->Controls->Add(this->labelCharacters);
+			this->groupBoxPassword->Location = System::Drawing::Point(571, 97);
+			this->groupBoxPassword->Name = L"groupBoxPassword";
+			this->groupBoxPassword->Size = System::Drawing::Size(390, 369);
+			this->groupBoxPassword->TabIndex = 1;
+			this->groupBoxPassword->TabStop = false;
+			this->groupBoxPassword->Text = L"Generowanie has³a";
 			// 
-			// groupBox2
+			// buttonPassword
 			// 
-			this->groupBox2->Controls->Add(this->button1);
-			this->groupBox2->Controls->Add(this->checkBox3);
-			this->groupBox2->Controls->Add(this->checkBox2);
-			this->groupBox2->Controls->Add(this->checkBox1);
-			this->groupBox2->Controls->Add(this->textBox3);
-			this->groupBox2->Controls->Add(this->label4);
-			this->groupBox2->Location = System::Drawing::Point(479, 46);
-			this->groupBox2->Name = L"groupBox2";
-			this->groupBox2->Size = System::Drawing::Size(377, 349);
-			this->groupBox2->TabIndex = 1;
-			this->groupBox2->TabStop = false;
-			this->groupBox2->Text = L"Generowanie has³¹";
+			this->buttonPassword->BackColor = System::Drawing::Color::SteelBlue;
+			this->buttonPassword->ForeColor = System::Drawing::SystemColors::Window;
+			this->buttonPassword->Location = System::Drawing::Point(111, 312);
+			this->buttonPassword->Name = L"buttonPassword";
+			this->buttonPassword->Size = System::Drawing::Size(145, 29);
+			this->buttonPassword->TabIndex = 5;
+			this->buttonPassword->Text = L"Generuj has³o";
+			this->buttonPassword->UseVisualStyleBackColor = false;
+			this->buttonPassword->Click += gcnew System::EventHandler(this, &MyForm::buttonPassword_Click);
 			// 
-			// label1
+			// checkBoxSpecial
 			// 
-			this->label1->AutoSize = true;
-			this->label1->Location = System::Drawing::Point(30, 22);
-			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(59, 30);
-			this->label1->TabIndex = 0;
-			this->label1->Text = L"Imiê";
+			this->checkBoxSpecial->AutoSize = true;
+			this->checkBoxSpecial->Location = System::Drawing::Point(59, 249);
+			this->checkBoxSpecial->Name = L"checkBoxSpecial";
+			this->checkBoxSpecial->Size = System::Drawing::Size(145, 24);
+			this->checkBoxSpecial->TabIndex = 4;
+			this->checkBoxSpecial->Text = L"Znaki specjalne";
+			this->checkBoxSpecial->UseVisualStyleBackColor = true;
 			// 
-			// label2
+			// checkBoxDigit
 			// 
-			this->label2->AutoSize = true;
-			this->label2->Location = System::Drawing::Point(30, 71);
-			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(76, 20);
-			this->label2->TabIndex = 1;
-			this->label2->Text = L"Nazwisko";
+			this->checkBoxDigit->AutoSize = true;
+			this->checkBoxDigit->Location = System::Drawing::Point(59, 196);
+			this->checkBoxDigit->Name = L"checkBoxDigit";
+			this->checkBoxDigit->Size = System::Drawing::Size(70, 24);
+			this->checkBoxDigit->TabIndex = 3;
+			this->checkBoxDigit->Text = L"Cyfry";
+			this->checkBoxDigit->UseVisualStyleBackColor = true;
 			// 
-			// label3
+			// checkBoxCharacters
 			// 
-			this->label3->AutoSize = true;
-			this->label3->Location = System::Drawing::Point(30, 127);
-			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(137, 30);
-			this->label3->TabIndex = 2;
-			this->label3->Text = L"Stanowisko";
+			this->checkBoxCharacters->AutoSize = true;
+			this->checkBoxCharacters->Location = System::Drawing::Point(59, 142);
+			this->checkBoxCharacters->Name = L"checkBoxCharacters";
+			this->checkBoxCharacters->Size = System::Drawing::Size(163, 24);
+			this->checkBoxCharacters->TabIndex = 2;
+			this->checkBoxCharacters->Text = L"Ma³e i wielkie litery";
+			this->checkBoxCharacters->UseVisualStyleBackColor = true;
 			// 
-			// textBox1
+			// textBoxCharacters
 			// 
-			this->textBox1->Location = System::Drawing::Point(188, 33);
-			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(208, 26);
-			this->textBox1->TabIndex = 3;
+			this->textBoxCharacters->Location = System::Drawing::Point(223, 53);
+			this->textBoxCharacters->Name = L"textBoxCharacters";
+			this->textBoxCharacters->Size = System::Drawing::Size(151, 26);
+			this->textBoxCharacters->TabIndex = 1;
 			// 
-			// textBox2
+			// labelCharacters
 			// 
-			this->textBox2->Location = System::Drawing::Point(188, 89);
-			this->textBox2->Name = L"textBox2";
-			this->textBox2->Size = System::Drawing::Size(208, 26);
-			this->textBox2->TabIndex = 4;
+			this->labelCharacters->AutoSize = true;
+			this->labelCharacters->Location = System::Drawing::Point(42, 51);
+			this->labelCharacters->Name = L"labelCharacters";
+			this->labelCharacters->Size = System::Drawing::Size(93, 20);
+			this->labelCharacters->TabIndex = 0;
+			this->labelCharacters->Text = L"Ile znaków\?";
 			// 
-			// comboBox1
+			// groupBoxPersonalData
 			// 
-			this->comboBox1->FormattingEnabled = true;
-			this->comboBox1->Items->AddRange(gcnew cli::array< System::Object^  >(4) {
+			this->groupBoxPersonalData->Controls->Add(this->textBoxSurname);
+			this->groupBoxPersonalData->Controls->Add(this->textBoxName);
+			this->groupBoxPersonalData->Controls->Add(this->comboBoxJob);
+			this->groupBoxPersonalData->Controls->Add(this->labelJob);
+			this->groupBoxPersonalData->Controls->Add(this->labelSurname);
+			this->groupBoxPersonalData->Controls->Add(this->labelName);
+			this->groupBoxPersonalData->Location = System::Drawing::Point(65, 97);
+			this->groupBoxPersonalData->Name = L"groupBoxPersonalData";
+			this->groupBoxPersonalData->Size = System::Drawing::Size(350, 369);
+			this->groupBoxPersonalData->TabIndex = 0;
+			this->groupBoxPersonalData->TabStop = false;
+			this->groupBoxPersonalData->Text = L"Dane pracownika";
+			// 
+			// textBoxSurname
+			// 
+			this->textBoxSurname->Location = System::Drawing::Point(139, 100);
+			this->textBoxSurname->Name = L"textBoxSurname";
+			this->textBoxSurname->Size = System::Drawing::Size(132, 26);
+			this->textBoxSurname->TabIndex = 5;
+			// 
+			// textBoxName
+			// 
+			this->textBoxName->Location = System::Drawing::Point(139, 57);
+			this->textBoxName->Name = L"textBoxName";
+			this->textBoxName->Size = System::Drawing::Size(132, 26);
+			this->textBoxName->TabIndex = 4;
+			// 
+			// comboBoxJob
+			// 
+			this->comboBoxJob->FormattingEnabled = true;
+			this->comboBoxJob->Items->AddRange(gcnew cli::array< System::Object^  >(4) {
 				L"Kierownik", L"Starszy Programista", L"M³odszy Programista",
 					L"Tester"
 			});
-			this->comboBox1->Location = System::Drawing::Point(188, 140);
-			this->comboBox1->Name = L"comboBox1";
-			this->comboBox1->Size = System::Drawing::Size(208, 28);
-			this->comboBox1->TabIndex = 6;
+			this->comboBoxJob->Location = System::Drawing::Point(139, 157);
+			this->comboBoxJob->Name = L"comboBoxJob";
+			this->comboBoxJob->Size = System::Drawing::Size(132, 28);
+			this->comboBoxJob->TabIndex = 3;
 			// 
-			// label4
+			// labelJob
 			// 
-			this->label4->AutoSize = true;
-			this->label4->Location = System::Drawing::Point(55, 49);
-			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(140, 30);
-			this->label4->TabIndex = 0;
-			this->label4->Text = L"Ile znaków\?";
+			this->labelJob->AutoSize = true;
+			this->labelJob->Location = System::Drawing::Point(18, 160);
+			this->labelJob->Name = L"labelJob";
+			this->labelJob->Size = System::Drawing::Size(91, 20);
+			this->labelJob->TabIndex = 2;
+			this->labelJob->Text = L"Stanowisko";
 			// 
-			// textBox3
+			// labelSurname
 			// 
-			this->textBox3->Location = System::Drawing::Point(172, 49);
-			this->textBox3->Name = L"textBox3";
-			this->textBox3->Size = System::Drawing::Size(178, 26);
-			this->textBox3->TabIndex = 1;
+			this->labelSurname->AutoSize = true;
+			this->labelSurname->Location = System::Drawing::Point(23, 103);
+			this->labelSurname->Name = L"labelSurname";
+			this->labelSurname->Size = System::Drawing::Size(76, 20);
+			this->labelSurname->TabIndex = 1;
+			this->labelSurname->Text = L"Nazwisko";
 			// 
-			// checkBox1
+			// labelName
 			// 
-			this->checkBox1->AutoSize = true;
-			this->checkBox1->BackColor = System::Drawing::Color::Transparent;
-			this->checkBox1->Checked = true;
-			this->checkBox1->CheckState = System::Windows::Forms::CheckState::Checked;
-			this->checkBox1->Location = System::Drawing::Point(58, 104);
-			this->checkBox1->Name = L"checkBox1";
-			this->checkBox1->Size = System::Drawing::Size(163, 24);
-			this->checkBox1->TabIndex = 2;
-			this->checkBox1->Text = L"Ma³e i wielkie litery";
-			this->checkBox1->UseVisualStyleBackColor = false;
+			this->labelName->AutoSize = true;
+			this->labelName->Location = System::Drawing::Point(22, 52);
+			this->labelName->Name = L"labelName";
+			this->labelName->Size = System::Drawing::Size(39, 20);
+			this->labelName->TabIndex = 0;
+			this->labelName->Text = L"Imiê";
 			// 
-			// checkBox2
+			// buttonConfirm
 			// 
-			this->checkBox2->AutoSize = true;
-			this->checkBox2->Location = System::Drawing::Point(57, 164);
-			this->checkBox2->Name = L"checkBox2";
-			this->checkBox2->Size = System::Drawing::Size(70, 24);
-			this->checkBox2->TabIndex = 3;
-			this->checkBox2->Text = L"Cyfry";
-			this->checkBox2->UseVisualStyleBackColor = true;
-			// 
-			// checkBox3
-			// 
-			this->checkBox3->AutoSize = true;
-			this->checkBox3->Location = System::Drawing::Point(58, 224);
-			this->checkBox3->Name = L"checkBox3";
-			this->checkBox3->Size = System::Drawing::Size(145, 24);
-			this->checkBox3->TabIndex = 4;
-			this->checkBox3->Text = L"Znaki specjalne";
-			this->checkBox3->UseVisualStyleBackColor = true;
-			// 
-			// button1
-			// 
-			this->button1->BackColor = System::Drawing::Color::SteelBlue;
-			this->button1->ForeColor = System::Drawing::Color::White;
-			this->button1->Location = System::Drawing::Point(100, 298);
-			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(194, 31);
-			this->button1->TabIndex = 5;
-			this->button1->Text = L"Generuj has³o";
-			this->button1->UseVisualStyleBackColor = false;
-			this->button1->Click += gcnew System::EventHandler(this, &MyForm::button1_Click);
-			// 
-			// button2
-			// 
-			this->button2->BackColor = System::Drawing::Color::SteelBlue;
-			this->button2->ForeColor = System::Drawing::Color::White;
-			this->button2->Location = System::Drawing::Point(248, 460);
-			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(434, 40);
-			this->button2->TabIndex = 2;
-			this->button2->Text = L"ZatwierdŸ";
-			this->button2->UseVisualStyleBackColor = false;
+			this->buttonConfirm->BackColor = System::Drawing::Color::SteelBlue;
+			this->buttonConfirm->ForeColor = System::Drawing::SystemColors::Window;
+			this->buttonConfirm->Location = System::Drawing::Point(279, 547);
+			this->buttonConfirm->Name = L"buttonConfirm";
+			this->buttonConfirm->Size = System::Drawing::Size(496, 56);
+			this->buttonConfirm->TabIndex = 2;
+			this->buttonConfirm->Text = L"ZatwierdŸ";
+			this->buttonConfirm->UseVisualStyleBackColor = false;
+			this->buttonConfirm->Click += gcnew System::EventHandler(this, &MyForm::buttonConfirm_Click);
 			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(9, 20);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::Color::LightSteelBlue;
-			this->ClientSize = System::Drawing::Size(894, 605);
-			this->Controls->Add(this->button2);
-			this->Controls->Add(this->groupBox2);
-			this->Controls->Add(this->groupBox1);
+			this->ClientSize = System::Drawing::Size(1149, 639);
+			this->Controls->Add(this->buttonConfirm);
+			this->Controls->Add(this->groupBoxPersonalData);
+			this->Controls->Add(this->groupBoxPassword);
 			this->Name = L"MyForm";
-			this->Text = L"MyForm";
-			this->groupBox1->ResumeLayout(false);
-			this->groupBox1->PerformLayout();
-			this->groupBox2->ResumeLayout(false);
-			this->groupBox2->PerformLayout();
+			this->Text = L"Dodaj pracownika";
+			this->groupBoxPassword->ResumeLayout(false);
+			this->groupBoxPassword->PerformLayout();
+			this->groupBoxPersonalData->ResumeLayout(false);
+			this->groupBoxPersonalData->PerformLayout();
 			this->ResumeLayout(false);
 
 		}
 #pragma endregion
-		System::Array^ znakiSpecjalne=gcnew array<System::String^>(14){L"!",L"@",L"#",L"$",L"%",L"^",L"&",L"*",L"(",")",L"_",L"-",L"+",L"="};
-	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
-		
+		System::String^ haslo;
+
+	private: System::Void buttonPassword_Click(System::Object^ sender, System::EventArgs^ e) {
+		bool maleLitery = checkBoxCharacters->Checked;
+		bool cyfry = checkBoxDigit->Checked;
+		bool znakiSpecjalne = checkBoxSpecial->Checked;
+
+		Random^ rand = gcnew Random();
+
+
+		array<String^>^ maleLiteryTab = gcnew array<String^>{ "abcdefghijklmnopqrstuvwxyz" };
+		array<String^>^ wielkieLiteryTab = gcnew array<String^>{ "ABCDEFGHIJKLMNOPQRSTUVWXYZ" };
+		array<String^>^ cyfryTab = gcnew array<String^>{ "0123456789" };
+		array<String^>^ znakiSpecjalneTab = gcnew array<String^>{ "!@#$%^&*()_+-=<>?/" };
+
+
+		int ilosc = Int32::Parse(textBoxCharacters->Text);
+
+
+		String^ dostepneZnaki = "";
+
+		if (maleLitery)
+			dostepneZnaki += maleLiteryTab[0];
+		if (cyfry)
+			dostepneZnaki += cyfryTab[0];
+		if (znakiSpecjalne)
+			dostepneZnaki += znakiSpecjalneTab[0];
+		if (checkBoxCharacters->Checked)
+			dostepneZnaki += wielkieLiteryTab[0];
+
+
+		haslo = "";
+
+
+		if (znakiSpecjalne) {
+
+			int specjalnyIndex = rand->Next(znakiSpecjalneTab[0]->Length);
+			haslo += znakiSpecjalneTab[0][specjalnyIndex];
+			ilosc--;
+		}
+
+		if (cyfry) {
+
+			int cyfryIndex = rand->Next(cyfryTab[0]->Length);
+			haslo += cyfryTab[0][cyfryIndex];
+			ilosc--;
+		}
+
+
+		for (int i = 0; i < ilosc; i++) {
+			int index = rand->Next(dostepneZnaki->Length);
+			haslo += dostepneZnaki[index];
+		}
+
+
+		MessageBox::Show(haslo);
+	};
+
+
+	private: System::Void buttonConfirm_Click(System::Object^ sender, System::EventArgs^ e) {
+
+		System::String^ imie = textBoxName->Text;
+		System::String^ nazwisko = textBoxSurname->Text;
+		System::String^ stanowisko = comboBoxJob->Text;
+
+
+		MessageBox::Show("Dane pracownika: " + imie + " " + nazwisko + " " + stanowisko + " " + haslo);
 	}
-};
+
+
+
+	};
 }
