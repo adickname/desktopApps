@@ -1,0 +1,3 @@
+C:\Users\AdrianPasterka\Desktop\desktopApps\Koperta\Koperta\x64\Debug\Koperta.vcxproj.AssemblyReference.cache
+C:\Users\AdrianPasterka\Desktop\desktopApps\Koperta\Koperta\x64\Debug\Koperta.MyForm.resources
+C:\Users\AdrianPasterka\Desktop\desktopApps\Koperta\Koperta\x64\Debug\Koperta.vcxproj.GenerateResource.cache

@@ -34,18 +34,19 @@ namespace Paszporty {
 				delete components;
 			}
 		}
-	private: System::Windows::Forms::Label^ label1;
-	private: System::Windows::Forms::Label^ label2;
-	private: System::Windows::Forms::Label^ label3;
-	private: System::Windows::Forms::TextBox^ textBox1;
-	private: System::Windows::Forms::TextBox^ textBox2;
-	private: System::Windows::Forms::TextBox^ textBox3;
-	private: System::Windows::Forms::GroupBox^ groupBox1;
-	private: System::Windows::Forms::RadioButton^ radioButton3;
-	private: System::Windows::Forms::RadioButton^ radioButton2;
-	private: System::Windows::Forms::RadioButton^ radioButton1;
-	private: System::Windows::Forms::PictureBox^ pictureBox1;
-	private: System::Windows::Forms::PictureBox^ pictureBox2;
+	private: System::Windows::Forms::Label^ labelNumer;
+	private: System::Windows::Forms::Label^ labelImie;
+	private: System::Windows::Forms::Label^ labelNazwisko;
+	private: System::Windows::Forms::TextBox^ textBoxNumer;
+	private: System::Windows::Forms::TextBox^ textBoxImie;
+	private: System::Windows::Forms::TextBox^ textBoxNazwisko;
+	private: System::Windows::Forms::GroupBox^ groupBoxOczy;
+	private: System::Windows::Forms::RadioButton^ radioButtonPiwneOczy;
+	private: System::Windows::Forms::RadioButton^ radioButtonZieloneOczy;
+	private: System::Windows::Forms::RadioButton^ radioButtonNiebieskieOczy;
+	private: System::Windows::Forms::PictureBox^ pictureBoxOsoba;
+	private: System::Windows::Forms::PictureBox^ pictureBoxOdcisk;
+	private: System::Windows::Forms::Button^ buttonOk;
 
 	private: System::ComponentModel::IContainer^ components;
 
@@ -64,158 +65,207 @@ namespace Paszporty {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			this->label1 = (gcnew System::Windows::Forms::Label());
-			this->label2 = (gcnew System::Windows::Forms::Label());
-			this->label3 = (gcnew System::Windows::Forms::Label());
-			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
-			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
-			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
-			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
-			this->radioButton1 = (gcnew System::Windows::Forms::RadioButton());
-			this->radioButton2 = (gcnew System::Windows::Forms::RadioButton());
-			this->radioButton3 = (gcnew System::Windows::Forms::RadioButton());
-			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox2 = (gcnew System::Windows::Forms::PictureBox());
-			this->groupBox1->SuspendLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
+			this->labelNumer = (gcnew System::Windows::Forms::Label());
+			this->labelImie = (gcnew System::Windows::Forms::Label());
+			this->labelNazwisko = (gcnew System::Windows::Forms::Label());
+			this->textBoxNumer = (gcnew System::Windows::Forms::TextBox());
+			this->textBoxImie = (gcnew System::Windows::Forms::TextBox());
+			this->textBoxNazwisko = (gcnew System::Windows::Forms::TextBox());
+			this->groupBoxOczy = (gcnew System::Windows::Forms::GroupBox());
+			this->radioButtonPiwneOczy = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButtonZieloneOczy = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButtonNiebieskieOczy = (gcnew System::Windows::Forms::RadioButton());
+			this->pictureBoxOsoba = (gcnew System::Windows::Forms::PictureBox());
+			this->pictureBoxOdcisk = (gcnew System::Windows::Forms::PictureBox());
+			this->buttonOk = (gcnew System::Windows::Forms::Button());
+			this->groupBoxOczy->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxOsoba))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxOdcisk))->BeginInit();
 			this->SuspendLayout();
 			// 
-			// label1
+			// labelNumer
 			// 
-			this->label1->AutoSize = true;
-			this->label1->Location = System::Drawing::Point(73, 64);
-			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(84, 30);
-			this->label1->TabIndex = 0;
-			this->label1->Text = L"Numer";
+			this->labelNumer->AutoSize = true;
+			this->labelNumer->Location = System::Drawing::Point(73, 64);
+			this->labelNumer->Name = L"labelNumer";
+			this->labelNumer->Size = System::Drawing::Size(56, 20);
+			this->labelNumer->TabIndex = 0;
+			this->labelNumer->Text = L"Numer";
 			// 
-			// label2
+			// labelImie
 			// 
-			this->label2->AutoSize = true;
-			this->label2->Location = System::Drawing::Point(73, 132);
-			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(59, 30);
-			this->label2->TabIndex = 1;
-			this->label2->Text = L"ImiÍ";
+			this->labelImie->AutoSize = true;
+			this->labelImie->Location = System::Drawing::Point(73, 132);
+			this->labelImie->Name = L"labelImie";
+			this->labelImie->Size = System::Drawing::Size(39, 20);
+			this->labelImie->TabIndex = 1;
+			this->labelImie->Text = L"ImiÍ";
 			// 
-			// label3
+			// labelNazwisko
 			// 
-			this->label3->AutoSize = true;
-			this->label3->Location = System::Drawing::Point(73, 213);
-			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(114, 30);
-			this->label3->TabIndex = 2;
-			this->label3->Text = L"Nazwisko";
+			this->labelNazwisko->AutoSize = true;
+			this->labelNazwisko->Location = System::Drawing::Point(73, 213);
+			this->labelNazwisko->Name = L"labelNazwisko";
+			this->labelNazwisko->Size = System::Drawing::Size(76, 20);
+			this->labelNazwisko->TabIndex = 2;
+			this->labelNazwisko->Text = L"Nazwisko";
 			// 
-			// textBox1
+			// textBoxNumer
 			// 
-			this->textBox1->Location = System::Drawing::Point(255, 64);
-			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(137, 26);
-			this->textBox1->TabIndex = 3;
+			this->textBoxNumer->BackColor = System::Drawing::Color::Azure;
+			this->textBoxNumer->Location = System::Drawing::Point(255, 64);
+			this->textBoxNumer->Name = L"textBoxNumer";
+			this->textBoxNumer->Size = System::Drawing::Size(137, 26);
+			this->textBoxNumer->TabIndex = 3;
+			this->textBoxNumer->Leave += gcnew System::EventHandler(this, &MyForm::aktualizacja);
 			// 
-			// textBox2
+			// textBoxImie
 			// 
-			this->textBox2->Location = System::Drawing::Point(253, 132);
-			this->textBox2->Name = L"textBox2";
-			this->textBox2->Size = System::Drawing::Size(139, 26);
-			this->textBox2->TabIndex = 4;
+			this->textBoxImie->BackColor = System::Drawing::Color::Azure;
+			this->textBoxImie->Location = System::Drawing::Point(253, 132);
+			this->textBoxImie->Name = L"textBoxImie";
+			this->textBoxImie->Size = System::Drawing::Size(139, 26);
+			this->textBoxImie->TabIndex = 4;
 			// 
-			// textBox3
+			// textBoxNazwisko
 			// 
-			this->textBox3->Location = System::Drawing::Point(253, 210);
-			this->textBox3->Name = L"textBox3";
-			this->textBox3->Size = System::Drawing::Size(139, 26);
-			this->textBox3->TabIndex = 5;
+			this->textBoxNazwisko->BackColor = System::Drawing::Color::Azure;
+			this->textBoxNazwisko->Location = System::Drawing::Point(253, 210);
+			this->textBoxNazwisko->Name = L"textBoxNazwisko";
+			this->textBoxNazwisko->Size = System::Drawing::Size(139, 26);
+			this->textBoxNazwisko->TabIndex = 5;
 			// 
-			// groupBox1
+			// groupBoxOczy
 			// 
-			this->groupBox1->Controls->Add(this->radioButton3);
-			this->groupBox1->Controls->Add(this->radioButton2);
-			this->groupBox1->Controls->Add(this->radioButton1);
-			this->groupBox1->Location = System::Drawing::Point(86, 373);
-			this->groupBox1->Name = L"groupBox1";
-			this->groupBox1->Size = System::Drawing::Size(346, 230);
-			this->groupBox1->TabIndex = 6;
-			this->groupBox1->TabStop = false;
-			this->groupBox1->Text = L"Kolor oczu";
+			this->groupBoxOczy->Controls->Add(this->radioButtonPiwneOczy);
+			this->groupBoxOczy->Controls->Add(this->radioButtonZieloneOczy);
+			this->groupBoxOczy->Controls->Add(this->radioButtonNiebieskieOczy);
+			this->groupBoxOczy->Location = System::Drawing::Point(86, 373);
+			this->groupBoxOczy->Name = L"groupBoxOczy";
+			this->groupBoxOczy->Size = System::Drawing::Size(346, 230);
+			this->groupBoxOczy->TabIndex = 6;
+			this->groupBoxOczy->TabStop = false;
+			this->groupBoxOczy->Text = L"Kolor oczu";
 			// 
-			// radioButton1
+			// radioButtonPiwneOczy
 			// 
-			this->radioButton1->AutoSize = true;
-			this->radioButton1->Checked = true;
-			this->radioButton1->Location = System::Drawing::Point(30, 52);
-			this->radioButton1->Name = L"radioButton1";
-			this->radioButton1->Size = System::Drawing::Size(156, 36);
-			this->radioButton1->TabIndex = 0;
-			this->radioButton1->TabStop = true;
-			this->radioButton1->Text = L"niebieskie";
-			this->radioButton1->UseVisualStyleBackColor = true;
+			this->radioButtonPiwneOczy->AutoSize = true;
+			this->radioButtonPiwneOczy->Location = System::Drawing::Point(30, 191);
+			this->radioButtonPiwneOczy->Name = L"radioButtonPiwneOczy";
+			this->radioButtonPiwneOczy->Size = System::Drawing::Size(75, 24);
+			this->radioButtonPiwneOczy->TabIndex = 2;
+			this->radioButtonPiwneOczy->TabStop = true;
+			this->radioButtonPiwneOczy->Text = L"piwne";
+			this->radioButtonPiwneOczy->UseVisualStyleBackColor = true;
 			// 
-			// radioButton2
+			// radioButtonZieloneOczy
 			// 
-			this->radioButton2->AutoSize = true;
-			this->radioButton2->Location = System::Drawing::Point(30, 122);
-			this->radioButton2->Name = L"radioButton2";
-			this->radioButton2->Size = System::Drawing::Size(126, 36);
-			this->radioButton2->TabIndex = 1;
-			this->radioButton2->TabStop = true;
-			this->radioButton2->Text = L"zielone";
-			this->radioButton2->UseVisualStyleBackColor = true;
+			this->radioButtonZieloneOczy->AutoSize = true;
+			this->radioButtonZieloneOczy->Location = System::Drawing::Point(30, 122);
+			this->radioButtonZieloneOczy->Name = L"radioButtonZieloneOczy";
+			this->radioButtonZieloneOczy->Size = System::Drawing::Size(84, 24);
+			this->radioButtonZieloneOczy->TabIndex = 1;
+			this->radioButtonZieloneOczy->TabStop = true;
+			this->radioButtonZieloneOczy->Text = L"zielone";
+			this->radioButtonZieloneOczy->UseVisualStyleBackColor = true;
 			// 
-			// radioButton3
+			// radioButtonNiebieskieOczy
 			// 
-			this->radioButton3->AutoSize = true;
-			this->radioButton3->Location = System::Drawing::Point(30, 191);
-			this->radioButton3->Name = L"radioButton3";
-			this->radioButton3->Size = System::Drawing::Size(113, 36);
-			this->radioButton3->TabIndex = 2;
-			this->radioButton3->TabStop = true;
-			this->radioButton3->Text = L"piwne";
-			this->radioButton3->UseVisualStyleBackColor = true;
+			this->radioButtonNiebieskieOczy->AutoSize = true;
+			this->radioButtonNiebieskieOczy->Checked = true;
+			this->radioButtonNiebieskieOczy->Location = System::Drawing::Point(30, 52);
+			this->radioButtonNiebieskieOczy->Name = L"radioButtonNiebieskieOczy";
+			this->radioButtonNiebieskieOczy->Size = System::Drawing::Size(104, 24);
+			this->radioButtonNiebieskieOczy->TabIndex = 0;
+			this->radioButtonNiebieskieOczy->TabStop = true;
+			this->radioButtonNiebieskieOczy->Text = L"niebieskie";
+			this->radioButtonNiebieskieOczy->UseVisualStyleBackColor = true;
 			// 
-			// pictureBox1
+			// pictureBoxOsoba
 			// 
-			this->pictureBox1->ImageLocation = L"czlowiek.png";
-			this->pictureBox1->Location = System::Drawing::Point(552, 101);
-			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(211, 260);
-			this->pictureBox1->TabIndex = 7;
-			this->pictureBox1->TabStop = false;
+			this->pictureBoxOsoba->ImageLocation = L"";
+			this->pictureBoxOsoba->Location = System::Drawing::Point(552, 101);
+			this->pictureBoxOsoba->Name = L"pictureBoxOsoba";
+			this->pictureBoxOsoba->Size = System::Drawing::Size(215, 260);
+			this->pictureBoxOsoba->TabIndex = 7;
+			this->pictureBoxOsoba->TabStop = false;
 			// 
-			// pictureBox2
+			// pictureBoxOdcisk
 			// 
-			this->pictureBox2->Location = System::Drawing::Point(860, 101);
-			this->pictureBox2->Name = L"pictureBox2";
-			this->pictureBox2->Size = System::Drawing::Size(204, 260);
-			this->pictureBox2->TabIndex = 8;
-			this->pictureBox2->TabStop = false;
+			this->pictureBoxOdcisk->ImageLocation = L"";
+			this->pictureBoxOdcisk->Location = System::Drawing::Point(860, 101);
+			this->pictureBoxOdcisk->Name = L"pictureBoxOdcisk";
+			this->pictureBoxOdcisk->Size = System::Drawing::Size(204, 260);
+			this->pictureBoxOdcisk->TabIndex = 8;
+			this->pictureBoxOdcisk->TabStop = false;
+			// 
+			// buttonOk
+			// 
+			this->buttonOk->BackColor = System::Drawing::Color::Azure;
+			this->buttonOk->Location = System::Drawing::Point(659, 495);
+			this->buttonOk->Name = L"buttonOk";
+			this->buttonOk->Size = System::Drawing::Size(311, 50);
+			this->buttonOk->TabIndex = 9;
+			this->buttonOk->Text = L"OK";
+			this->buttonOk->UseVisualStyleBackColor = false;
+			this->buttonOk->Click += gcnew System::EventHandler(this, &MyForm::buttonOk_Click);
 			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(9, 20);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->BackColor = System::Drawing::Color::CadetBlue;
 			this->ClientSize = System::Drawing::Size(1113, 772);
-			this->Controls->Add(this->pictureBox2);
-			this->Controls->Add(this->pictureBox1);
-			this->Controls->Add(this->groupBox1);
-			this->Controls->Add(this->textBox3);
-			this->Controls->Add(this->textBox2);
-			this->Controls->Add(this->textBox1);
-			this->Controls->Add(this->label3);
-			this->Controls->Add(this->label2);
-			this->Controls->Add(this->label1);
+			this->Controls->Add(this->buttonOk);
+			this->Controls->Add(this->pictureBoxOdcisk);
+			this->Controls->Add(this->pictureBoxOsoba);
+			this->Controls->Add(this->groupBoxOczy);
+			this->Controls->Add(this->textBoxNazwisko);
+			this->Controls->Add(this->textBoxImie);
+			this->Controls->Add(this->textBoxNumer);
+			this->Controls->Add(this->labelNazwisko);
+			this->Controls->Add(this->labelImie);
+			this->Controls->Add(this->labelNumer);
 			this->Name = L"MyForm";
 			this->Text = L"Wprowadzanie danych do paszportu. Wykona≥: 00000000000";
-			this->groupBox1->ResumeLayout(false);
-			this->groupBox1->PerformLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->EndInit();
+			this->groupBoxOczy->ResumeLayout(false);
+			this->groupBoxOczy->PerformLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxOsoba))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxOdcisk))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
 		}
 #pragma endregion
+	private: System::Void aktualizacja(System::Object^ sender, System::EventArgs^ e) {
+		pictureBoxOsoba->ImageLocation = textBoxNumer->Text + "-zdjecie.png";
+		pictureBoxOdcisk->ImageLocation = textBoxNumer->Text + "-odcisk.png";
+	}
+	private: System::Void buttonOk_Click(System::Object^ sender, System::EventArgs^ e) {
+		String^ kolorOczu = nullptr;
+		if (radioButtonNiebieskieOczy->Checked) {
+			kolorOczu = radioButtonNiebieskieOczy->Text;
+		}
+		if (radioButtonZieloneOczy->Checked) {
+			kolorOczu = radioButtonZieloneOczy->Text;
+		}
+		if (radioButtonPiwneOczy->Checked) {
+			kolorOczu = radioButtonPiwneOczy->Text;
+		}
+
+		if (textBoxNumer->Text->Length > 0) {
+			if (textBoxImie->Text->Length > 0) {
+				if (textBoxNazwisko->Text->Length > 0) {
+					MessageBox::Show(textBoxNumer->Text + " " + textBoxImie->Text + " kolor oczu " + kolorOczu);
+				}
+				else {
+					MessageBox::Show("Wprowadü dane");
+				}
+			}
+			else {
+				MessageBox::Show("Wprowadü dane");
+			}
+		}
+	}
 	};
 }
