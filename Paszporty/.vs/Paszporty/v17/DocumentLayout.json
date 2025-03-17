@@ -1,7 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\AdrianPasterka\\Desktop\\desktopApps\\Paszporty\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{48717D72-B0AF-4355-9010-0ACED1029EF7}|Paszporty\\Paszporty.vcxproj|C:\\Users\\AdrianPasterka\\Desktop\\desktopApps\\Paszporty\\Paszporty\\MyForm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form",
+      "RelativeMoniker": "D:0:0:{48717D72-B0AF-4355-9010-0ACED1029EF7}|Paszporty\\Paszporty.vcxproj|solutionrelative:Paszporty\\MyForm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,8 +14,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MyForm.h [Design]",
+              "DocumentMoniker": "C:\\Users\\AdrianPasterka\\Desktop\\desktopApps\\Paszporty\\Paszporty\\MyForm.h",
+              "RelativeDocumentMoniker": "Paszporty\\MyForm.h",
+              "ToolTip": "C:\\Users\\AdrianPasterka\\Desktop\\desktopApps\\Paszporty\\Paszporty\\MyForm.h [Design]",
+              "RelativeToolTip": "Paszporty\\MyForm.h [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-17T06:45:13.111Z",
+              "EditorCaption": " [Design]"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"

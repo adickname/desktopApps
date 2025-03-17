@@ -36,7 +36,7 @@
               "RelativeDocumentMoniker": "Koperta\\MyForm.h",
               "ToolTip": "C:\\Users\\AdrianPasterka\\Desktop\\desktopApps\\Koperta\\Koperta\\MyForm.h",
               "RelativeToolTip": "Koperta\\MyForm.h",
-              "ViewState": "AgIAAAIBAAAAAAAAAAAAwA8BAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAAQBAAAAAAAAAAAAwB4BAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-03-14T11:42:53.386Z",
               "EditorCaption": ""
@@ -51,8 +51,7 @@
               "RelativeToolTip": "Koperta\\MyForm.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-14T11:31:48.135Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-14T11:31:48.135Z"
             },
             {
               "$type": "Document",
@@ -63,8 +62,7 @@
               "ToolTip": "C:\\Users\\AdrianPasterka\\Desktop\\desktopApps\\Koperta\\Koperta\\MyForm.h [Design]",
               "RelativeToolTip": "Koperta\\MyForm.h [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-14T11:31:10.712Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-03-14T11:31:10.712Z"
             }
           ]
         }

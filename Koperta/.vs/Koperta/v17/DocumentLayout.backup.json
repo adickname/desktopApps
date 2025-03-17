@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\AdrianPasterka\\Desktop\\desktopApps\\Koperta\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5F4AF835-53D8-41D2-9243-3CDDEAB90446}|Koperta\\Koperta.vcxproj|C:\\Users\\AdrianPasterka\\Desktop\\desktopApps\\Koperta\\Koperta\\MyForm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5F4AF835-53D8-41D2-9243-3CDDEAB90446}|Koperta\\Koperta.vcxproj|solutionrelative:Koperta\\MyForm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5F4AF835-53D8-41D2-9243-3CDDEAB90446}|Koperta\\Koperta.vcxproj|C:\\Users\\AdrianPasterka\\Desktop\\desktopApps\\Koperta\\Koperta\\MyForm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form",
       "RelativeMoniker": "D:0:0:{5F4AF835-53D8-41D2-9243-3CDDEAB90446}|Koperta\\Koperta.vcxproj|solutionrelative:Koperta\\MyForm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F4AF835-53D8-41D2-9243-3CDDEAB90446}|Koperta\\Koperta.vcxproj|C:\\Users\\AdrianPasterka\\Desktop\\desktopApps\\Koperta\\Koperta\\MyForm.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5F4AF835-53D8-41D2-9243-3CDDEAB90446}|Koperta\\Koperta.vcxproj|solutionrelative:Koperta\\MyForm.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,39 +23,13 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MyForm.h",
-              "DocumentMoniker": "C:\\Users\\AdrianPasterka\\Desktop\\desktopApps\\Koperta\\Koperta\\MyForm.h",
-              "RelativeDocumentMoniker": "Koperta\\MyForm.h",
-              "ToolTip": "C:\\Users\\AdrianPasterka\\Desktop\\desktopApps\\Koperta\\Koperta\\MyForm.h*",
-              "RelativeToolTip": "Koperta\\MyForm.h*",
-              "ViewState": "AgIAAAIBAAAAAAAAAAAAwA8BAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-14T11:42:53.386Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MyForm.cpp",
-              "DocumentMoniker": "C:\\Users\\AdrianPasterka\\Desktop\\desktopApps\\Koperta\\Koperta\\MyForm.cpp",
-              "RelativeDocumentMoniker": "Koperta\\MyForm.cpp",
-              "ToolTip": "C:\\Users\\AdrianPasterka\\Desktop\\desktopApps\\Koperta\\Koperta\\MyForm.cpp",
-              "RelativeToolTip": "Koperta\\MyForm.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-14T11:31:48.135Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "MyForm.h [Design]",
               "DocumentMoniker": "C:\\Users\\AdrianPasterka\\Desktop\\desktopApps\\Koperta\\Koperta\\MyForm.h",
               "RelativeDocumentMoniker": "Koperta\\MyForm.h",
-              "ToolTip": "C:\\Users\\AdrianPasterka\\Desktop\\desktopApps\\Koperta\\Koperta\\MyForm.h [Design]*",
-              "RelativeToolTip": "Koperta\\MyForm.h [Design]*",
+              "ToolTip": "C:\\Users\\AdrianPasterka\\Desktop\\desktopApps\\Koperta\\Koperta\\MyForm.h [Design]",
+              "RelativeToolTip": "Koperta\\MyForm.h [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-14T11:31:10.712Z",
+              "WhenOpened": "2025-03-17T06:31:15.657Z",
               "EditorCaption": " [Design]"
             }
           ]
