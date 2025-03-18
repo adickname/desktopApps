@@ -1,265 +1,314 @@
 #pragma once
+#include <cstdlib>
+#include <ctime>
 
 namespace Password {
 
-	using namespace System;
-	using namespace System::ComponentModel;
-	using namespace System::Collections;
-	using namespace System::Windows::Forms;
-	using namespace System::Data;
-	using namespace System::Drawing;
+    using namespace System;
+    using namespace System::ComponentModel;
+    using namespace System::Collections;
+    using namespace System::Windows::Forms;
+    using namespace System::Data;
+    using namespace System::Drawing;
 
-	/// <summary>
-	/// Summary for MyForm
-	/// </summary>
-	public ref class MyForm : public System::Windows::Forms::Form
-	{
-	public:
-		MyForm(void)
-		{
-			InitializeComponent();
-			//
-			//TODO: Add the constructor code here
-			//
-		}
+    /// <summary>
+    /// Summary for MyForm
+    /// </summary>
+    public ref class MyForm : public System::Windows::Forms::Form
+    {
+    public:
+        MyForm(void)
+        {
+            InitializeComponent();
+            //
+            //TODO: Add the constructor code here
+            //
 
-	protected:
-		/// <summary>
-		/// Clean up any resources being used.
-		/// </summary>
-		~MyForm()
-		{
-			if (components)
-			{
-				delete components;
-			}
-		}
-	private: System::Windows::Forms::GroupBox^ groupBox1;
-	private: System::Windows::Forms::TextBox^ textBox2;
-	private: System::Windows::Forms::TextBox^ textBox1;
-	private: System::Windows::Forms::Label^ label3;
-	private: System::Windows::Forms::Label^ label2;
-	private: System::Windows::Forms::Label^ label1;
-	private: System::Windows::Forms::GroupBox^ groupBox2;
-	private: System::Windows::Forms::ComboBox^ comboBox1;
-	private: System::Windows::Forms::Button^ button1;
-	private: System::Windows::Forms::CheckBox^ checkBox3;
-	private: System::Windows::Forms::CheckBox^ checkBox2;
-	private: System::Windows::Forms::CheckBox^ checkBox1;
-	private: System::Windows::Forms::TextBox^ textBox3;
-	private: System::Windows::Forms::Label^ label4;
-	private: System::Windows::Forms::Button^ button2;
-	protected:
+            srand(static_cast<unsigned int>(time(0)));
+        }
 
-	private:
-		/// <summary>
-		/// Required designer variable.
-		/// </summary>
-		System::ComponentModel::Container ^components;
+    protected:
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        ~MyForm()
+        {
+            if (components)
+            {
+                delete components;
+            }
+        }
+    private: System::Windows::Forms::GroupBox^ groupBoxDanePracownika;
+    private: System::Windows::Forms::TextBox^ textBoxNazwisko;
+    private: System::Windows::Forms::TextBox^ textBoxImie;
+    private: System::Windows::Forms::Label^ labelStanowisko;
+    private: System::Windows::Forms::Label^ labelNazwisko;
+    private: System::Windows::Forms::Label^ labelImie;
+    private: System::Windows::Forms::GroupBox^ groupBoxHaslo;
+    private: System::Windows::Forms::ComboBox^ comboBoxStanowisko;
+    private: System::Windows::Forms::Button^ buttonHaslo;
+    private: System::Windows::Forms::CheckBox^ checkBoxZnakiSpecjalne;
+    private: System::Windows::Forms::CheckBox^ checkBoxCyfry;
+    private: System::Windows::Forms::CheckBox^ checkBoxLitery;
+    private: System::Windows::Forms::TextBox^ textBoxDlugoscHasla;
+    private: System::Windows::Forms::Label^ labelZnaki;
+    private: System::Windows::Forms::Button^ buttonZatwierdz;
+    private: array<wchar_t>^ znakiSpecjalne;
+    protected:
+
+    private:
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        System::ComponentModel::Container^ components;
 
 #pragma region Windows Form Designer generated code
-		/// <summary>
-		/// Required method for Designer support - do not modify
-		/// the contents of this method with the code editor.
-		/// </summary>
-		void InitializeComponent(void)
-		{
-			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
-			this->groupBox2 = (gcnew System::Windows::Forms::GroupBox());
-			this->label1 = (gcnew System::Windows::Forms::Label());
-			this->label2 = (gcnew System::Windows::Forms::Label());
-			this->label3 = (gcnew System::Windows::Forms::Label());
-			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
-			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
-			this->comboBox1 = (gcnew System::Windows::Forms::ComboBox());
-			this->label4 = (gcnew System::Windows::Forms::Label());
-			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
-			this->checkBox1 = (gcnew System::Windows::Forms::CheckBox());
-			this->checkBox2 = (gcnew System::Windows::Forms::CheckBox());
-			this->checkBox3 = (gcnew System::Windows::Forms::CheckBox());
-			this->button1 = (gcnew System::Windows::Forms::Button());
-			this->button2 = (gcnew System::Windows::Forms::Button());
-			this->groupBox1->SuspendLayout();
-			this->groupBox2->SuspendLayout();
-			this->SuspendLayout();
-			// 
-			// groupBox1
-			// 
-			this->groupBox1->Controls->Add(this->comboBox1);
-			this->groupBox1->Controls->Add(this->textBox2);
-			this->groupBox1->Controls->Add(this->textBox1);
-			this->groupBox1->Controls->Add(this->label3);
-			this->groupBox1->Controls->Add(this->label2);
-			this->groupBox1->Controls->Add(this->label1);
-			this->groupBox1->Location = System::Drawing::Point(31, 46);
-			this->groupBox1->Name = L"groupBox1";
-			this->groupBox1->Size = System::Drawing::Size(423, 349);
-			this->groupBox1->TabIndex = 0;
-			this->groupBox1->TabStop = false;
-			this->groupBox1->Text = L"Dane pracownika";
-			// 
-			// groupBox2
-			// 
-			this->groupBox2->Controls->Add(this->button1);
-			this->groupBox2->Controls->Add(this->checkBox3);
-			this->groupBox2->Controls->Add(this->checkBox2);
-			this->groupBox2->Controls->Add(this->checkBox1);
-			this->groupBox2->Controls->Add(this->textBox3);
-			this->groupBox2->Controls->Add(this->label4);
-			this->groupBox2->Location = System::Drawing::Point(479, 46);
-			this->groupBox2->Name = L"groupBox2";
-			this->groupBox2->Size = System::Drawing::Size(377, 349);
-			this->groupBox2->TabIndex = 1;
-			this->groupBox2->TabStop = false;
-			this->groupBox2->Text = L"Generowanie has³¹";
-			// 
-			// label1
-			// 
-			this->label1->AutoSize = true;
-			this->label1->Location = System::Drawing::Point(30, 22);
-			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(59, 30);
-			this->label1->TabIndex = 0;
-			this->label1->Text = L"Imiê";
-			// 
-			// label2
-			// 
-			this->label2->AutoSize = true;
-			this->label2->Location = System::Drawing::Point(30, 71);
-			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(76, 20);
-			this->label2->TabIndex = 1;
-			this->label2->Text = L"Nazwisko";
-			// 
-			// label3
-			// 
-			this->label3->AutoSize = true;
-			this->label3->Location = System::Drawing::Point(30, 127);
-			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(137, 30);
-			this->label3->TabIndex = 2;
-			this->label3->Text = L"Stanowisko";
-			// 
-			// textBox1
-			// 
-			this->textBox1->Location = System::Drawing::Point(188, 33);
-			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(208, 26);
-			this->textBox1->TabIndex = 3;
-			// 
-			// textBox2
-			// 
-			this->textBox2->Location = System::Drawing::Point(188, 89);
-			this->textBox2->Name = L"textBox2";
-			this->textBox2->Size = System::Drawing::Size(208, 26);
-			this->textBox2->TabIndex = 4;
-			// 
-			// comboBox1
-			// 
-			this->comboBox1->FormattingEnabled = true;
-			this->comboBox1->Items->AddRange(gcnew cli::array< System::Object^  >(4) {
-				L"Kierownik", L"Starszy Programista", L"M³odszy Programista",
-					L"Tester"
-			});
-			this->comboBox1->Location = System::Drawing::Point(188, 140);
-			this->comboBox1->Name = L"comboBox1";
-			this->comboBox1->Size = System::Drawing::Size(208, 28);
-			this->comboBox1->TabIndex = 6;
-			// 
-			// label4
-			// 
-			this->label4->AutoSize = true;
-			this->label4->Location = System::Drawing::Point(55, 49);
-			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(140, 30);
-			this->label4->TabIndex = 0;
-			this->label4->Text = L"Ile znaków\?";
-			// 
-			// textBox3
-			// 
-			this->textBox3->Location = System::Drawing::Point(172, 49);
-			this->textBox3->Name = L"textBox3";
-			this->textBox3->Size = System::Drawing::Size(178, 26);
-			this->textBox3->TabIndex = 1;
-			// 
-			// checkBox1
-			// 
-			this->checkBox1->AutoSize = true;
-			this->checkBox1->BackColor = System::Drawing::Color::Transparent;
-			this->checkBox1->Checked = true;
-			this->checkBox1->CheckState = System::Windows::Forms::CheckState::Checked;
-			this->checkBox1->Location = System::Drawing::Point(58, 104);
-			this->checkBox1->Name = L"checkBox1";
-			this->checkBox1->Size = System::Drawing::Size(163, 24);
-			this->checkBox1->TabIndex = 2;
-			this->checkBox1->Text = L"Ma³e i wielkie litery";
-			this->checkBox1->UseVisualStyleBackColor = false;
-			// 
-			// checkBox2
-			// 
-			this->checkBox2->AutoSize = true;
-			this->checkBox2->Location = System::Drawing::Point(57, 164);
-			this->checkBox2->Name = L"checkBox2";
-			this->checkBox2->Size = System::Drawing::Size(70, 24);
-			this->checkBox2->TabIndex = 3;
-			this->checkBox2->Text = L"Cyfry";
-			this->checkBox2->UseVisualStyleBackColor = true;
-			// 
-			// checkBox3
-			// 
-			this->checkBox3->AutoSize = true;
-			this->checkBox3->Location = System::Drawing::Point(58, 224);
-			this->checkBox3->Name = L"checkBox3";
-			this->checkBox3->Size = System::Drawing::Size(145, 24);
-			this->checkBox3->TabIndex = 4;
-			this->checkBox3->Text = L"Znaki specjalne";
-			this->checkBox3->UseVisualStyleBackColor = true;
-			// 
-			// button1
-			// 
-			this->button1->BackColor = System::Drawing::Color::SteelBlue;
-			this->button1->ForeColor = System::Drawing::Color::White;
-			this->button1->Location = System::Drawing::Point(100, 298);
-			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(194, 31);
-			this->button1->TabIndex = 5;
-			this->button1->Text = L"Generuj has³o";
-			this->button1->UseVisualStyleBackColor = false;
-			this->button1->Click += gcnew System::EventHandler(this, &MyForm::button1_Click);
-			// 
-			// button2
-			// 
-			this->button2->BackColor = System::Drawing::Color::SteelBlue;
-			this->button2->ForeColor = System::Drawing::Color::White;
-			this->button2->Location = System::Drawing::Point(248, 460);
-			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(434, 40);
-			this->button2->TabIndex = 2;
-			this->button2->Text = L"ZatwierdŸ";
-			this->button2->UseVisualStyleBackColor = false;
-			// 
-			// MyForm
-			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(9, 20);
-			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->BackColor = System::Drawing::Color::LightSteelBlue;
-			this->ClientSize = System::Drawing::Size(894, 605);
-			this->Controls->Add(this->button2);
-			this->Controls->Add(this->groupBox2);
-			this->Controls->Add(this->groupBox1);
-			this->Name = L"MyForm";
-			this->Text = L"MyForm";
-			this->groupBox1->ResumeLayout(false);
-			this->groupBox1->PerformLayout();
-			this->groupBox2->ResumeLayout(false);
-			this->groupBox2->PerformLayout();
-			this->ResumeLayout(false);
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        void InitializeComponent(void)
+        {
+            this->groupBoxDanePracownika = (gcnew System::Windows::Forms::GroupBox());
+            this->comboBoxStanowisko = (gcnew System::Windows::Forms::ComboBox());
+            this->textBoxNazwisko = (gcnew System::Windows::Forms::TextBox());
+            this->textBoxImie = (gcnew System::Windows::Forms::TextBox());
+            this->labelStanowisko = (gcnew System::Windows::Forms::Label());
+            this->labelNazwisko = (gcnew System::Windows::Forms::Label());
+            this->labelImie = (gcnew System::Windows::Forms::Label());
+            this->groupBoxHaslo = (gcnew System::Windows::Forms::GroupBox());
+            this->buttonHaslo = (gcnew System::Windows::Forms::Button());
+            this->checkBoxZnakiSpecjalne = (gcnew System::Windows::Forms::CheckBox());
+            this->checkBoxCyfry = (gcnew System::Windows::Forms::CheckBox());
+            this->checkBoxLitery = (gcnew System::Windows::Forms::CheckBox());
+            this->textBoxDlugoscHasla = (gcnew System::Windows::Forms::TextBox());
+            this->labelZnaki = (gcnew System::Windows::Forms::Label());
+            this->buttonZatwierdz = (gcnew System::Windows::Forms::Button());
+            this->groupBoxDanePracownika->SuspendLayout();
+            this->groupBoxHaslo->SuspendLayout();
+            this->SuspendLayout();
+            // 
+            // groupBoxDanePracownika
+            // 
+            this->groupBoxDanePracownika->Controls->Add(this->comboBoxStanowisko);
+            this->groupBoxDanePracownika->Controls->Add(this->textBoxNazwisko);
+            this->groupBoxDanePracownika->Controls->Add(this->textBoxImie);
+            this->groupBoxDanePracownika->Controls->Add(this->labelStanowisko);
+            this->groupBoxDanePracownika->Controls->Add(this->labelNazwisko);
+            this->groupBoxDanePracownika->Controls->Add(this->labelImie);
+            this->groupBoxDanePracownika->Location = System::Drawing::Point(21, 30);
+            this->groupBoxDanePracownika->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+            this->groupBoxDanePracownika->Name = L"groupBoxDanePracownika";
+            this->groupBoxDanePracownika->Padding = System::Windows::Forms::Padding(2, 2, 2, 2);
+            this->groupBoxDanePracownika->Size = System::Drawing::Size(282, 227);
+            this->groupBoxDanePracownika->TabIndex = 0;
+            this->groupBoxDanePracownika->TabStop = false;
+            this->groupBoxDanePracownika->Text = L"Dane pracownika";
+            // 
+            // comboBoxStanowisko
+            // 
+            this->comboBoxStanowisko->FormattingEnabled = true;
+            this->comboBoxStanowisko->Items->AddRange(gcnew cli::array< System::Object^  >(4) {
+                L"Kierownik", L"Starszy Programista", L"M³odszy Programista",
+                    L"Tester"
+            });
+            this->comboBoxStanowisko->Location = System::Drawing::Point(125, 91);
+            this->comboBoxStanowisko->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+            this->comboBoxStanowisko->Name = L"comboBoxStanowisko";
+            this->comboBoxStanowisko->Size = System::Drawing::Size(140, 21);
+            this->comboBoxStanowisko->TabIndex = 6;
+            // 
+            // textBoxNazwisko
+            // 
+            this->textBoxNazwisko->Location = System::Drawing::Point(125, 58);
+            this->textBoxNazwisko->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+            this->textBoxNazwisko->Name = L"textBoxNazwisko";
+            this->textBoxNazwisko->Size = System::Drawing::Size(140, 20);
+            this->textBoxNazwisko->TabIndex = 4;
+            // 
+            // textBoxImie
+            // 
+            this->textBoxImie->Location = System::Drawing::Point(125, 21);
+            this->textBoxImie->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+            this->textBoxImie->Name = L"textBoxImie";
+            this->textBoxImie->Size = System::Drawing::Size(140, 20);
+            this->textBoxImie->TabIndex = 3;
+            // 
+            // labelStanowisko
+            // 
+            this->labelStanowisko->AutoSize = true;
+            this->labelStanowisko->Location = System::Drawing::Point(20, 83);
+            this->labelStanowisko->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+            this->labelStanowisko->Name = L"labelStanowisko";
+            this->labelStanowisko->Size = System::Drawing::Size(62, 13);
+            this->labelStanowisko->TabIndex = 2;
+            this->labelStanowisko->Text = L"Stanowisko";
+            // 
+            // labelNazwisko
+            // 
+            this->labelNazwisko->AutoSize = true;
+            this->labelNazwisko->Location = System::Drawing::Point(20, 46);
+            this->labelNazwisko->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+            this->labelNazwisko->Name = L"labelNazwisko";
+            this->labelNazwisko->Size = System::Drawing::Size(53, 13);
+            this->labelNazwisko->TabIndex = 1;
+            this->labelNazwisko->Text = L"Nazwisko";
+            // 
+            // labelImie
+            // 
+            this->labelImie->AutoSize = true;
+            this->labelImie->Location = System::Drawing::Point(20, 14);
+            this->labelImie->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+            this->labelImie->Name = L"labelImie";
+            this->labelImie->Size = System::Drawing::Size(26, 13);
+            this->labelImie->TabIndex = 0;
+            this->labelImie->Text = L"Imiê";
+            // 
+            // groupBoxHaslo
+            // 
+            this->groupBoxHaslo->Controls->Add(this->buttonHaslo);
+            this->groupBoxHaslo->Controls->Add(this->checkBoxZnakiSpecjalne);
+            this->groupBoxHaslo->Controls->Add(this->checkBoxCyfry);
+            this->groupBoxHaslo->Controls->Add(this->checkBoxLitery);
+            this->groupBoxHaslo->Controls->Add(this->textBoxDlugoscHasla);
+            this->groupBoxHaslo->Controls->Add(this->labelZnaki);
+            this->groupBoxHaslo->Location = System::Drawing::Point(319, 30);
+            this->groupBoxHaslo->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+            this->groupBoxHaslo->Name = L"groupBoxHaslo";
+            this->groupBoxHaslo->Padding = System::Windows::Forms::Padding(2, 2, 2, 2);
+            this->groupBoxHaslo->Size = System::Drawing::Size(251, 227);
+            this->groupBoxHaslo->TabIndex = 1;
+            this->groupBoxHaslo->TabStop = false;
+            this->groupBoxHaslo->Text = L"Generowanie has³¹";
+            // 
+            // buttonHaslo
+            // 
+            this->buttonHaslo->BackColor = System::Drawing::Color::SteelBlue;
+            this->buttonHaslo->ForeColor = System::Drawing::Color::White;
+            this->buttonHaslo->Location = System::Drawing::Point(67, 194);
+            this->buttonHaslo->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+            this->buttonHaslo->Name = L"buttonHaslo";
+            this->buttonHaslo->Size = System::Drawing::Size(129, 20);
+            this->buttonHaslo->TabIndex = 5;
+            this->buttonHaslo->Text = L"Generuj has³o";
+            this->buttonHaslo->UseVisualStyleBackColor = false;
+            this->buttonHaslo->Click += gcnew System::EventHandler(this, &MyForm::buttonHaslo_Click);
+            // 
+            // checkBoxZnakiSpecjalne
+            // 
+            this->checkBoxZnakiSpecjalne->AutoSize = true;
+            this->checkBoxZnakiSpecjalne->Location = System::Drawing::Point(39, 146);
+            this->checkBoxZnakiSpecjalne->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+            this->checkBoxZnakiSpecjalne->Name = L"checkBoxZnakiSpecjalne";
+            this->checkBoxZnakiSpecjalne->Size = System::Drawing::Size(101, 17);
+            this->checkBoxZnakiSpecjalne->TabIndex = 4;
+            this->checkBoxZnakiSpecjalne->Text = L"Znaki specjalne";
+            this->checkBoxZnakiSpecjalne->UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCyfry
+            // 
+            this->checkBoxCyfry->AutoSize = true;
+            this->checkBoxCyfry->Location = System::Drawing::Point(38, 107);
+            this->checkBoxCyfry->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+            this->checkBoxCyfry->Name = L"checkBoxCyfry";
+            this->checkBoxCyfry->Size = System::Drawing::Size(49, 17);
+            this->checkBoxCyfry->TabIndex = 3;
+            this->checkBoxCyfry->Text = L"Cyfry";
+            this->checkBoxCyfry->UseVisualStyleBackColor = true;
+            // 
+            // checkBoxLitery
+            // 
+            this->checkBoxLitery->AutoSize = true;
+            this->checkBoxLitery->BackColor = System::Drawing::Color::Transparent;
+            this->checkBoxLitery->Checked = true;
+            this->checkBoxLitery->CheckState = System::Windows::Forms::CheckState::Checked;
+            this->checkBoxLitery->Location = System::Drawing::Point(39, 68);
+            this->checkBoxLitery->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+            this->checkBoxLitery->Name = L"checkBoxLitery";
+            this->checkBoxLitery->Size = System::Drawing::Size(115, 17);
+            this->checkBoxLitery->TabIndex = 2;
+            this->checkBoxLitery->Text = L"Ma³e i wielkie litery";
+            this->checkBoxLitery->UseVisualStyleBackColor = false;
+            // 
+            // textBoxDlugoscHasla
+            // 
+            this->textBoxDlugoscHasla->Location = System::Drawing::Point(115, 32);
+            this->textBoxDlugoscHasla->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+            this->textBoxDlugoscHasla->Name = L"textBoxDlugoscHasla";
+            this->textBoxDlugoscHasla->Size = System::Drawing::Size(120, 20);
+            this->textBoxDlugoscHasla->TabIndex = 1;
+            // 
+            // labelZnaki
+            // 
+            this->labelZnaki->AutoSize = true;
+            this->labelZnaki->Location = System::Drawing::Point(37, 32);
+            this->labelZnaki->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+            this->labelZnaki->Name = L"labelZnaki";
+            this->labelZnaki->Size = System::Drawing::Size(64, 13);
+            this->labelZnaki->TabIndex = 0;
+            this->labelZnaki->Text = L"Ile znaków\?";
+            // 
+            // buttonZatwierdz
+            // 
+            this->buttonZatwierdz->BackColor = System::Drawing::Color::SteelBlue;
+            this->buttonZatwierdz->ForeColor = System::Drawing::Color::White;
+            this->buttonZatwierdz->Location = System::Drawing::Point(165, 299);
+            this->buttonZatwierdz->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+            this->buttonZatwierdz->Name = L"buttonZatwierdz";
+            this->buttonZatwierdz->Size = System::Drawing::Size(289, 26);
+            this->buttonZatwierdz->TabIndex = 2;
+            this->buttonZatwierdz->Text = L"ZatwierdŸ";
+            this->buttonZatwierdz->UseVisualStyleBackColor = false;
+            this->buttonZatwierdz->Click += gcnew System::EventHandler(this, &MyForm::buttonZatwierdz_Click);
+            // 
+            // MyForm
+            // 
+            this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
+            this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+            this->BackColor = System::Drawing::Color::LightSteelBlue;
+            this->ClientSize = System::Drawing::Size(596, 393);
+            this->Controls->Add(this->buttonZatwierdz);
+            this->Controls->Add(this->groupBoxHaslo);
+            this->Controls->Add(this->groupBoxDanePracownika);
+            this->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+            this->Name = L"MyForm";
+            this->Text = L"MyForm";
+            this->groupBoxDanePracownika->ResumeLayout(false);
+            this->groupBoxDanePracownika->PerformLayout();
+            this->groupBoxHaslo->ResumeLayout(false);
+            this->groupBoxHaslo->PerformLayout();
+            this->ResumeLayout(false);
 
-		}
+        }
+
 #pragma endregion
-		System::Array^ znakiSpecjalne=gcnew array<System::String^>(14){L"!",L"@",L"#",L"$",L"%",L"^",L"&",L"*",L"(",")",L"_",L"-",L"+",L"="};
-	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
-		
-	}
-};
+
+
+        System::String^ password = nullptr;
+    private: System::Void buttonHaslo_Click(System::Object^ sender, System::EventArgs^ e) {
+        password = nullptr;
+        System::String^ znakiSpecjalne = { "!@#$%^&*()_-z+=" };
+        int letterToPassword = Convert::ToInt16(textBoxDlugoscHasla->Text);
+        if (checkBoxLitery->Checked == true) {
+            password += Convert::ToChar(rand() % 26 + 65);
+            letterToPassword--;
+        }
+        if (checkBoxCyfry->Checked == true) {
+            password += Convert::ToChar(rand() % 10 + 48);
+            letterToPassword--;
+        }
+        if (checkBoxZnakiSpecjalne->Checked == true) {
+            int temp = rand() % 14;
+            password += znakiSpecjalne[temp];
+            letterToPassword--;
+        }
+        for (; letterToPassword > 0; letterToPassword--) {
+            password += Convert::ToChar(rand() % 26 + 97);
+        }
+        MessageBox::Show(password);
+    }
+    private: System::Void buttonZatwierdz_Click(System::Object^ sender, System::EventArgs^ e) {
+        MessageBox::Show("Dane pracownika " + textBoxImie->Text + " " + textBoxNazwisko->Text + " " + comboBoxStanowisko->Text + " Has³o: " + password);
+    }
+    };
 }
