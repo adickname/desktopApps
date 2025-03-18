@@ -1,5 +1,6 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "WorkspaceRootPath": "C:\\Users\\paste\\Desktop\\desktopApps\\Password\\",
   "Documents": [
     {
@@ -15,6 +16,10 @@
       "RelativeMoniker": "D:0:0:{36A8F286-C5C3-4982-8CD1-59974CB61E6F}|Password\\Password.vcxproj|solutionrelative:Password\\MyForm.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
+=======
+  "WorkspaceRootPath": "C:\\Users\\AdrianPasterka\\Desktop\\desktopApps\\Password\\",
+  "Documents": [],
+>>>>>>> 088402f9a88b2d164708216d654b75dc6caaead6
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -22,11 +27,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+<<<<<<< HEAD
             },
             {
               "$type": "Document",
@@ -64,6 +70,8 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-03-10T08:51:40.937Z"
+=======
+>>>>>>> 088402f9a88b2d164708216d654b75dc6caaead6
             }
           ]
         }

@@ -48,7 +48,11 @@
               "RelativeDocumentMoniker": "Password\\MyForm.h",
               "ToolTip": "C:\\Users\\paste\\Desktop\\desktopApps\\Password\\Password\\MyForm.h",
               "RelativeToolTip": "Password\\MyForm.h",
+<<<<<<< HEAD
               "ViewState": "AgIAACgBAAAAAAAAAAAAACsBAAA2AAAAAAAAAA==",
+=======
+              "ViewState": "AgIAACUBAAAAAAAAAAAQwEgBAAAAAAAAAAAAAA==",
+>>>>>>> 088402f9a88b2d164708216d654b75dc6caaead6
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-03-10T09:11:45.759Z",
               "EditorCaption": ""
@@ -63,8 +67,23 @@
               "RelativeToolTip": "Password\\MyForm.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+<<<<<<< HEAD
               "WhenOpened": "2025-03-10T08:51:40.937Z",
               "EditorCaption": ""
+=======
+              "WhenOpened": "2025-03-10T08:51:40.937Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MyForm.h [Design]",
+              "DocumentMoniker": "C:\\Users\\AdrianPasterka\\Desktop\\desktopApps\\Password\\Password\\MyForm.h",
+              "RelativeDocumentMoniker": "Password\\MyForm.h",
+              "ToolTip": "C:\\Users\\AdrianPasterka\\Desktop\\desktopApps\\Password\\Password\\MyForm.h [Design]",
+              "RelativeToolTip": "Password\\MyForm.h [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-10T08:51:26.335Z"
+>>>>>>> 088402f9a88b2d164708216d654b75dc6caaead6
             }
           ]
         }

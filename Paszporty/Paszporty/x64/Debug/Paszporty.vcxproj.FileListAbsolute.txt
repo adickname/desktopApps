@@ -1,0 +1,3 @@
+C:\Users\AdrianPasterka\Desktop\desktopApps\Paszporty\Paszporty\x64\Debug\Paszporty.vcxproj.AssemblyReference.cache
+C:\Users\AdrianPasterka\Desktop\desktopApps\Paszporty\Paszporty\x64\Debug\Paszporty.MyForm.resources
+C:\Users\AdrianPasterka\Desktop\desktopApps\Paszporty\Paszporty\x64\Debug\Paszporty.vcxproj.GenerateResource.cache
