@@ -1,18 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\paste\\Desktop\\desktopApps\\Albumy\\",
+  "WorkspaceRootPath": "C:\\Users\\AdrianPasterka\\Desktop\\desktopApps\\Albumy\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BE94B2F0-3948-45E6-9D42-B8F405BEAF23}|Albumy\\Albumy.vcxproj|C:\\Users\\paste\\Desktop\\desktopApps\\Albumy\\Albumy\\MyForm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{BE94B2F0-3948-45E6-9D42-B8F405BEAF23}|Albumy\\Albumy.vcxproj|C:\\Users\\AdrianPasterka\\Desktop\\desktopApps\\Albumy\\Albumy\\MyForm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{BE94B2F0-3948-45E6-9D42-B8F405BEAF23}|Albumy\\Albumy.vcxproj|solutionrelative:Albumy\\MyForm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BE94B2F0-3948-45E6-9D42-B8F405BEAF23}|Albumy\\Albumy.vcxproj|C:\\Users\\paste\\Desktop\\desktopApps\\Albumy\\Albumy\\MyForm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form",
+      "AbsoluteMoniker": "D:0:0:{BE94B2F0-3948-45E6-9D42-B8F405BEAF23}|Albumy\\Albumy.vcxproj|C:\\Users\\AdrianPasterka\\Desktop\\desktopApps\\Albumy\\Albumy\\MyForm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form",
       "RelativeMoniker": "D:0:0:{BE94B2F0-3948-45E6-9D42-B8F405BEAF23}|Albumy\\Albumy.vcxproj|solutionrelative:Albumy\\MyForm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BE94B2F0-3948-45E6-9D42-B8F405BEAF23}|Albumy\\Albumy.vcxproj|C:\\Users\\paste\\Desktop\\desktopApps\\Albumy\\Albumy\\MyForm.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{BE94B2F0-3948-45E6-9D42-B8F405BEAF23}|Albumy\\Albumy.vcxproj|solutionrelative:Albumy\\MyForm.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -32,39 +28,25 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MyForm.h",
-              "DocumentMoniker": "C:\\Users\\paste\\Desktop\\desktopApps\\Albumy\\Albumy\\MyForm.h",
+              "DocumentMoniker": "C:\\Users\\AdrianPasterka\\Desktop\\desktopApps\\Albumy\\Albumy\\MyForm.h",
               "RelativeDocumentMoniker": "Albumy\\MyForm.h",
-              "ToolTip": "C:\\Users\\paste\\Desktop\\desktopApps\\Albumy\\Albumy\\MyForm.h*",
-              "RelativeToolTip": "Albumy\\MyForm.h*",
-              "ViewState": "AgIAANUAAAAAAAAAAAAAAOMAAABAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\AdrianPasterka\\Desktop\\desktopApps\\Albumy\\Albumy\\MyForm.h",
+              "RelativeToolTip": "Albumy\\MyForm.h",
+              "ViewState": "AgIAAEEBAAAAAAAAAAAAwF4BAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-18T18:02:37.854Z",
+              "WhenOpened": "2025-03-19T12:14:53.03Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "MyForm.h [Design]",
-              "DocumentMoniker": "C:\\Users\\paste\\Desktop\\desktopApps\\Albumy\\Albumy\\MyForm.h",
+              "DocumentMoniker": "C:\\Users\\AdrianPasterka\\Desktop\\desktopApps\\Albumy\\Albumy\\MyForm.h",
               "RelativeDocumentMoniker": "Albumy\\MyForm.h",
-              "ToolTip": "C:\\Users\\paste\\Desktop\\desktopApps\\Albumy\\Albumy\\MyForm.h [Design]*",
-              "RelativeToolTip": "Albumy\\MyForm.h [Design]*",
+              "ToolTip": "C:\\Users\\AdrianPasterka\\Desktop\\desktopApps\\Albumy\\Albumy\\MyForm.h [Design]",
+              "RelativeToolTip": "Albumy\\MyForm.h [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-18T17:43:21.847Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MyForm.cpp",
-              "DocumentMoniker": "C:\\Users\\paste\\Desktop\\desktopApps\\Albumy\\Albumy\\MyForm.cpp",
-              "RelativeDocumentMoniker": "Albumy\\MyForm.cpp",
-              "ToolTip": "C:\\Users\\paste\\Desktop\\desktopApps\\Albumy\\Albumy\\MyForm.cpp",
-              "RelativeToolTip": "Albumy\\MyForm.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-17T07:35:07.851Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-19T12:14:50.033Z"
             }
           ]
         }

@@ -9,7 +9,7 @@ namespace Albumy {
 	using namespace System::Data;
 	using namespace System::Drawing;
 	using namespace System::IO;
-
+	using namespace System::Collections::Generic;
 
 	/// <summary>
 	/// Summary for MyForm
@@ -47,6 +47,7 @@ namespace Albumy {
 	private: System::Windows::Forms::Label^ label5;
 	private: System::Windows::Forms::Button^ button1;
 
+
 	private:
 		/// <summary>
 		/// Required designer variable.
@@ -77,9 +78,10 @@ namespace Albumy {
 			// pictureBox1
 			// 
 			this->pictureBox1->ImageLocation = L"obraz3.png";
-			this->pictureBox1->Location = System::Drawing::Point(28, 66);
+			this->pictureBox1->Location = System::Drawing::Point(42, 102);
+			this->pictureBox1->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(100, 70);
+			this->pictureBox1->Size = System::Drawing::Size(150, 108);
 			this->pictureBox1->TabIndex = 0;
 			this->pictureBox1->TabStop = false;
 			this->pictureBox1->Click += gcnew System::EventHandler(this, &MyForm::pictureBox1_Click);
@@ -87,9 +89,10 @@ namespace Albumy {
 			// pictureBox2
 			// 
 			this->pictureBox2->ImageLocation = L"obraz2.png";
-			this->pictureBox2->Location = System::Drawing::Point(739, 66);
+			this->pictureBox2->Location = System::Drawing::Point(1108, 102);
+			this->pictureBox2->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->pictureBox2->Name = L"pictureBox2";
-			this->pictureBox2->Size = System::Drawing::Size(100, 70);
+			this->pictureBox2->Size = System::Drawing::Size(150, 108);
 			this->pictureBox2->TabIndex = 1;
 			this->pictureBox2->TabStop = false;
 			this->pictureBox2->Click += gcnew System::EventHandler(this, &MyForm::pictureBox2_Click);
@@ -97,9 +100,10 @@ namespace Albumy {
 			// pictureBox3
 			// 
 			this->pictureBox3->ImageLocation = L"obraz.png";
-			this->pictureBox3->Location = System::Drawing::Point(173, 12);
+			this->pictureBox3->Location = System::Drawing::Point(260, 18);
+			this->pictureBox3->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->pictureBox3->Name = L"pictureBox3";
-			this->pictureBox3->Size = System::Drawing::Size(202, 208);
+			this->pictureBox3->Size = System::Drawing::Size(303, 320);
 			this->pictureBox3->TabIndex = 2;
 			this->pictureBox3->TabStop = false;
 			// 
@@ -109,9 +113,10 @@ namespace Albumy {
 			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 27.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(238)));
 			this->label1->ForeColor = System::Drawing::Color::White;
-			this->label1->Location = System::Drawing::Point(390, 37);
+			this->label1->Location = System::Drawing::Point(585, 57);
+			this->label1->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(118, 42);
+			this->label1->Size = System::Drawing::Size(177, 64);
 			this->label1->TabIndex = 3;
 			this->label1->Text = L"label1";
 			// 
@@ -121,9 +126,10 @@ namespace Albumy {
 			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(238)));
 			this->label2->ForeColor = System::Drawing::Color::White;
-			this->label2->Location = System::Drawing::Point(392, 123);
+			this->label2->Location = System::Drawing::Point(588, 189);
+			this->label2->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(79, 29);
+			this->label2->Size = System::Drawing::Size(113, 40);
 			this->label2->TabIndex = 4;
 			this->label2->Text = L"label2";
 			// 
@@ -132,9 +138,10 @@ namespace Albumy {
 			this->label3->AutoSize = true;
 			this->label3->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(97)), static_cast<System::Int32>(static_cast<System::Byte>(217)),
 				static_cast<System::Int32>(static_cast<System::Byte>(24)));
-			this->label3->Location = System::Drawing::Point(401, 186);
+			this->label3->Location = System::Drawing::Point(602, 286);
+			this->label3->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(35, 13);
+			this->label3->Size = System::Drawing::Size(51, 20);
 			this->label3->TabIndex = 5;
 			this->label3->Text = L"label3";
 			// 
@@ -143,9 +150,10 @@ namespace Albumy {
 			this->label4->AutoSize = true;
 			this->label4->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(97)), static_cast<System::Int32>(static_cast<System::Byte>(217)),
 				static_cast<System::Int32>(static_cast<System::Byte>(24)));
-			this->label4->Location = System::Drawing::Point(517, 186);
+			this->label4->Location = System::Drawing::Point(776, 286);
+			this->label4->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(35, 13);
+			this->label4->Size = System::Drawing::Size(51, 20);
 			this->label4->TabIndex = 6;
 			this->label4->Text = L"label4";
 			// 
@@ -154,9 +162,10 @@ namespace Albumy {
 			this->label5->AutoSize = true;
 			this->label5->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(97)), static_cast<System::Int32>(static_cast<System::Byte>(217)),
 				static_cast<System::Int32>(static_cast<System::Byte>(24)));
-			this->label5->Location = System::Drawing::Point(201, 261);
+			this->label5->Location = System::Drawing::Point(302, 402);
+			this->label5->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label5->Name = L"label5";
-			this->label5->Size = System::Drawing::Size(35, 13);
+			this->label5->Size = System::Drawing::Size(51, 20);
 			this->label5->TabIndex = 7;
 			this->label5->Text = L"label5";
 			// 
@@ -166,9 +175,10 @@ namespace Albumy {
 				static_cast<System::Int32>(static_cast<System::Byte>(24)));
 			this->button1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(238)));
-			this->button1->Location = System::Drawing::Point(304, 239);
+			this->button1->Location = System::Drawing::Point(456, 368);
+			this->button1->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(132, 44);
+			this->button1->Size = System::Drawing::Size(198, 68);
 			this->button1->TabIndex = 8;
 			this->button1->Text = L"Pobierz";
 			this->button1->UseVisualStyleBackColor = false;
@@ -176,10 +186,10 @@ namespace Albumy {
 			// 
 			// MyForm
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
+			this->AutoScaleDimensions = System::Drawing::SizeF(9, 20);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::Color::SeaGreen;
-			this->ClientSize = System::Drawing::Size(1068, 393);
+			this->ClientSize = System::Drawing::Size(1602, 605);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->label5);
 			this->Controls->Add(this->label4);
@@ -189,7 +199,6 @@ namespace Albumy {
 			this->Controls->Add(this->pictureBox3);
 			this->Controls->Add(this->pictureBox2);
 			this->Controls->Add(this->pictureBox1);
-			this->Margin = System::Windows::Forms::Padding(2);
 			this->Name = L"MyForm";
 			this->Text = L"MojeDŸwiêki, Wykona³ : 00000000000";
 			this->Load += gcnew System::EventHandler(this, &MyForm::MyForm_Load);
@@ -202,7 +211,7 @@ namespace Albumy {
 		}
 #pragma endregion
 		int numberAlbum;
-		array<int>^ pobraneTablica = gcnew array<int>(14);
+		List<Int32>^ pobraneTablica = gcnew List<Int32>;
 	private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e) {
 		StreamReader^ sr = gcnew StreamReader("Data.txt");
 		String^ artysta= sr->ReadLine();
@@ -225,10 +234,13 @@ namespace Albumy {
 		{
 			i++;
 			if (i % 5 == 0) {
-				pobraneTablica[indexPobrane] = Int32::Parse(sr->ReadLine());
+				pobraneTablica->Add(Convert::ToInt32(sr->ReadLine()));
 			}
 			else {
 				sr->ReadLine();
+			}
+			if (i == 6) {
+				i = 0;
 			}
 			
 		}
@@ -330,6 +342,15 @@ private: System::Void pictureBox2_Click(System::Object^ sender, System::EventArg
 	}
 }
 private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+	if (numberAlbum == 1) {
+		pobraneTablica[numberAlbum-1] = pobraneTablica[numberAlbum-1] + 1;
+		this->label5->Text = pobraneTablica[numberAlbum-1].ToString();
+	}
+	else {
+		pobraneTablica[numberAlbum] = pobraneTablica[numberAlbum] + 1;
+		this->label5->Text = pobraneTablica[numberAlbum].ToString();
+	}
+
 }
 };
 }

@@ -1,3 +1,6 @@
 C:\Users\paste\Desktop\desktopApps\Albumy\Albumy\x64\Debug\Albumy.vcxproj.AssemblyReference.cache
 C:\Users\paste\Desktop\desktopApps\Albumy\Albumy\x64\Debug\Albumy.MyForm.resources
 C:\Users\paste\Desktop\desktopApps\Albumy\Albumy\x64\Debug\Albumy.vcxproj.GenerateResource.cache
+C:\Users\AdrianPasterka\Desktop\desktopApps\Albumy\Albumy\x64\Debug\Albumy.vcxproj.AssemblyReference.cache
+C:\Users\AdrianPasterka\Desktop\desktopApps\Albumy\Albumy\x64\Debug\Albumy.MyForm.resources
+C:\Users\AdrianPasterka\Desktop\desktopApps\Albumy\Albumy\x64\Debug\Albumy.vcxproj.GenerateResource.cache
